@@ -36,8 +36,9 @@ log "Task 1: Backing up OpenClaw workspace..."
 cd "$WORKSPACE"
 
 # Configure git credential using PAT
-git config credential.helper store
-echo "https://${PAT_ENV_VAR}:x-oauth-basic@github.com" > ~/.git-credentials.backup 2>/dev/null || true
+git config --global credential.helper store
+echo "https://${PAT_ENV_VAR}:x-oauth-basic@github.com" > ~/.git-credentials 2>/dev/null || true
+chmod 600 ~/.git-credentials
 
 # Check if remote is configured
 REMOTE_URL="https://github.com/LemonTeaViTA/OpenClaw.git"
