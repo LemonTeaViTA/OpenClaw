@@ -1,0 +1,48 @@
+#!/usr/bin/env node
+
+// DuckDuckGo Search CLI Tool
+// 使用 browser 工具进行实际搜索（因为直接 HTTP 请求可能被限制）
+
+const args = process.argv.slice(2);
+
+if (!args.length || args[0] === 'help' || args[0] === '--help' || args[0] === '-h') {
+  console.log(`
+🔍 DuckDuckGo Search Tool
+
+Usage: duckduckgo-search [options] <query>
+
+Options:
+  -q, --query <text>   搜索关键词
+  -n, --max <num>      最大结果数 (默认：5)
+  help                 显示帮助
+
+Examples:
+  duckduckgo-search "Python tutorial"
+  duckduckgo-search -q "AI news" -n 10
+`);
+  process.exit(0);
+}
+
+// 解析参数
+let query = '';
+let maxResults = 5;
+
+for (let i = 0; i < args.length; i++) {
+  if (args[i] === '-q' || args[i] === '--query') {
+    query = args[++i];
+  } else if (args[i] === '-n' || args[i] === '--max') {
+    maxResults = parseInt(args[++i]);
+  } else if (!args[i].startsWith('-')) {
+    query = args[i];
+  }
+}
+
+if (!query) {
+  console.log('❌ 请提供搜索关键词');
+  process.exit(1);
+}
+
+console.log(`🔍 搜索：${query}`);
+console.log(`📊 最大结果数：${maxResults}`);
+console.log('\n💡 提示：使用 browser 工具访问 https://duckduckgo.com/?q=' + encodeURIComponent(query));
+console.log('   或在 OpenClaw 中使用 browser 工具进行实际搜索\n');
