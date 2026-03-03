@@ -1,0 +1,26 @@
+cat > /root/OpenClaw-Evolution/.gitignore <<EOF
+# 🦞 OpenClaw 极简安全防线
+
+# 1. 编辑器临时文件 (防止 vim/nano/VSCode 产生垃圾)
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# 2. 系统垃圾文件
+.DS_Store
+Thumbs.db
+
+# 3. 潜在的敏感文件 (防手滑)
+# 即使你现在没放，万一以后不小心放了 .env 或 key 文件呢？
+.env
+*.key
+*.pem
+id_rsa
+secret.json
+credentials.json
+
+# 4. 日志文件 (除非你特意想备份日志)
+*.log
+EOF
