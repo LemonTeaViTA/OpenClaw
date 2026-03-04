@@ -41,8 +41,8 @@
   - 03-并发编程 - 面渣逆袭 V2.1.pdf (28MB)
   - 04-集合框架 - 面渣逆袭 V2.1.pdf (14MB)
 - **2026-03-04**: MySQL 篇已入库 → `/root/.openclaw/workspace/files/mysql-notes/`
-  - 面渣逆袭 MySQL 篇 V2.2.pdf (待下载)
+  - 面渣逆袭 MySQL 篇 V2.2.pdf (54MB) ✅
 - **2026-03-04**: Redis 篇已入库 → `/root/.openclaw/workspace/files/redis-notes/`
-  - 面渣逆袭 Redis 篇 V2.0.pdf (待下载)
+  - 面渣逆袭 Redis 篇 V2.0.pdf (69MB) ✅
 - **2026-03-04**: Spring 篇已入库 → `/root/.openclaw/workspace/files/spring-notes/`
-  - 面渣逆袭 Spring 篇 V2.0 亮白版.pdf (待下载)
+  - 面渣逆袭 Spring 篇 V2.0 亮白版.pdf (48MB) ✅
