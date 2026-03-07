@@ -1,5 +1,16 @@
-# HEARTBEAT.md
+# HEARTBEAT.md - 定期检查任务
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+## 每日必查 (每次 heartbeat 轮询)
+- [ ] 检查是否有未发送的日报（22:30 前）
+- [ ] 检查备份日志 `/root/logs/oc-backup.log` 是否有错误
+- [ ] 检查复习进度是否更新（对比 MEMORY.md 和实际进度）
 
-# Add tasks below when you want the agent to check something periodically.
+## 每周日额外检查
+- [ ] 生成周报复盘（更新 MEMORY.md 第 4 节）
+- [ ] 检查下周计划是否需要调整
+
+## 注意事项
+- 日报发送时间：每天 22:30（复习结束后）
+- 备份时间：每天 12:00 和 22:30
+- 代码更新：每天 08:00（复习前）
+- 如果 heartbeat 发现任务未完成，立即提醒用户
