@@ -1,6 +1,7 @@
 # HEARTBEAT.md - 定期检查任务
 
 ## 每日必查 (每次 heartbeat 轮询)
+- [ ] **检查早报待发送**：如果 `/root/.openclaw/workspace/.pending-daily-plan.md` 存在，读取并发送给用户，然后删除文件
 - [ ] 检查是否有未发送的日报（22:30 前）
 - [ ] 检查备份日志 `/root/logs/oc-backup.log` 是否有错误
 - [ ] 检查复习进度是否更新（对比 MEMORY.md 和实际进度）
