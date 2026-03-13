@@ -1,14 +1,16 @@
 {
   "version": "1.0",
   "created": "2026-03-13T10:23:00+08:00",
-  "pending": [
+  "updated": "2026-03-13T15:05:00+08:00",
+  "pending": [],
+  "completed": [
     {
       "id": "jvm-day1-review-20260312",
       "task": "JVM Day 1 复习（9 题）- JVM 概述 + 内存区域",
       "assignedDate": "2026-03-12",
-      "dueDate": "2026-03-13",
-      "status": "pending",
-      "reason": "用户未回复/忘记复习",
+      "completedDate": "2026-03-13",
+      "status": "completed",
+      "finalScore": "4.3/5",
       "content": {
         "topics": [
           "JVM 作用",
@@ -23,11 +25,36 @@
         ],
         "questionCount": 9,
         "originalScore": "5/5（全对）",
-        "reviewRequired": true
-      },
-      "addedToTodayPlan": true
+        "reviewScore": "4.3/5"
+      }
+    },
+    {
+      "id": "collection-test-20260313",
+      "task": "集合框架综合测试（10 题）",
+      "assignedDate": "2026-03-13",
+      "completedDate": "2026-03-13",
+      "status": "completed",
+      "finalScore": "4.6/5",
+      "content": {
+        "topics": [
+          "ArrayList 数据结构",
+          "HashMap 1.7 vs 1.8",
+          "HashMap 扩容机制",
+          "ConcurrentHashMap 原理",
+          "ConcurrentHashMap null 限制",
+          "HashSet vs ArrayList",
+          "LinkedHashMap vs TreeMap",
+          "队列 vs 栈",
+          "阻塞队列实现方式",
+          "hashCode + equals"
+        ],
+        "questionCount": 10,
+        "highlights": [
+          "ConcurrentHashMap null 限制从 0/5 提升到 5/5",
+          "SynchronousQueue 特点完全掌握"
+        ]
+      }
     }
   ],
-  "completed": [],
-  "notes": "2026-03-13: 首次启用待办队列机制，解决用户无回复导致流程卡住的问题"
+  "notes": "2026-03-13: 首次启用待办队列机制，解决用户无回复导致流程卡住的问题。集合框架正式收官！"
 }
