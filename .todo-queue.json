@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "created": "2026-03-13T10:23:00+08:00",
-  "updated": "2026-03-13T15:05:00+08:00",
+  "updated": "2026-03-13T21:07:00+08:00",
   "pending": [],
   "completed": [
     {
@@ -54,7 +54,92 @@
           "SynchronousQueue 特点完全掌握"
         ]
       }
+    },
+    {
+      "id": "jvm-day2-learning-20260313",
+      "task": "JVM Day 2 学习 - 垃圾回收基础（9 题）",
+      "assignedDate": "2026-03-13",
+      "completedDate": "2026-03-13",
+      "status": "completed",
+      "learningMode": "讲解模式（先讲解后测试）",
+      "content": {
+        "topics": [
+          "GC 作用（自动回收，解决内存泄漏）",
+          "判断回收（可达性分析）",
+          "GC Roots（栈、静态、常量、Native）",
+          "标记 - 清除算法（有碎片）",
+          "标记 - 复制算法（新生代）",
+          "标记 - 整理算法（老年代）",
+          "分代收集理论",
+          "四种引用类型（强软虚弱）",
+          "finalize() 方法（已废弃）",
+          "安全点与安全区域"
+        ],
+        "questionCount": 9,
+        "nextReview": "2026-03-14（第 1 次复习）"
+      }
     }
   ],
-  "notes": "2026-03-13: 首次启用待办队列机制，解决用户无回复导致流程卡住的问题。集合框架正式收官！"
+  "schedule": {
+    "reviews": [
+      {
+        "id": "java-base-review-1-20260314",
+        "type": "review",
+        "content": "Java 基础篇 第 1 次复习（56 题，艾宾浩斯）",
+        "dueDate": "2026-03-14",
+        "priority": "high",
+        "estimatedTime": "60-90 分钟"
+      },
+      {
+        "id": "collection-review-1-20260314",
+        "type": "review",
+        "content": "集合框架 第 1 次复习（29 题，艾宾浩斯）",
+        "dueDate": "2026-03-14",
+        "priority": "high",
+        "estimatedTime": "45-60 分钟"
+      },
+      {
+        "id": "jvm-day2-review-1-20260314",
+        "type": "review",
+        "content": "JVM Day 2 第 1 次复习（9 题，艾宾浩斯）",
+        "dueDate": "2026-03-14",
+        "priority": "high",
+        "estimatedTime": "30 分钟"
+      },
+      {
+        "id": "jvm-day1-review-2-20260315",
+        "type": "review",
+        "content": "JVM Day 1 第 2 次复习（9 题，3 天后）",
+        "dueDate": "2026-03-15",
+        "priority": "medium",
+        "estimatedTime": "30 分钟"
+      },
+      {
+        "id": "java-base-review-2-20260316",
+        "type": "review",
+        "content": "Java 基础篇 第 2 次复习（56 题，3 天后）",
+        "dueDate": "2026-03-16",
+        "priority": "medium",
+        "estimatedTime": "60-90 分钟"
+      },
+      {
+        "id": "collection-review-2-20260316",
+        "type": "review",
+        "content": "集合框架 第 2 次复习（29 题，3 天后）",
+        "dueDate": "2026-03-16",
+        "priority": "medium",
+        "estimatedTime": "45-60 分钟"
+      }
+    ],
+    "learning": [
+      {
+        "id": "jvm-day3-20260315",
+        "type": "learning",
+        "content": "JVM Day 3 - 垃圾回收器（CMS、G1）",
+        "scheduledDate": "2026-03-15",
+        "estimatedTime": "60 分钟"
+      }
+    ]
+  },
+  "notes": "2026-03-13: 启用复习计划机制，学习和复习分离。JVM Day 2 完成（讲解模式）"
 }
