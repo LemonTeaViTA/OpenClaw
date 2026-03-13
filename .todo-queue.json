@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "created": "2026-03-13T10:23:00+08:00",
+  "pending": [
+    {
+      "id": "jvm-day1-review-20260312",
+      "task": "JVM Day 1 复习（9 题）- JVM 概述 + 内存区域",
+      "assignedDate": "2026-03-12",
+      "dueDate": "2026-03-13",
+      "status": "pending",
+      "reason": "用户未回复/忘记复习",
+      "content": {
+        "topics": [
+          "JVM 作用",
+          "JVM 架构",
+          "内存区域分类",
+          "堆 vs 栈区别",
+          "元空间 vs 永久代",
+          "对象创建过程",
+          "对象内存布局",
+          "堆内存分配方式",
+          "TLAB 作用"
+        ],
+        "questionCount": 9,
+        "originalScore": "5/5（全对）",
+        "reviewRequired": true
+      },
+      "addedToTodayPlan": true
+    }
+  ],
+  "completed": [],
+  "notes": "2026-03-13: 首次启用待办队列机制，解决用户无回复导致流程卡住的问题"
+}
