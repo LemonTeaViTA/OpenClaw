@@ -1,7 +1,17 @@
 {
   "version": "1.0",
   "created": "2026-03-13T10:23:00+08:00",
-  "updated": "2026-03-13T21:07:00+08:00",
+  "updated": "2026-03-13T22:15:00+08:00",
+  "strategy": {
+    "reviewMethod": "章节轮转 + 随机抽题（每次 10 题）",
+    "reviewCycle": "不按艾宾浩斯，按章节轮转",
+    "sundayRoutine": "薄弱知识点复习 + 模拟面试",
+    "masteryThreshold": {
+      "enabled": false,
+      "note": "记录掌握度但默认不跳过，除非用户明确说"
+    },
+    "bufferDay": "周六（补漏/休息/机动）"
+  },
   "pending": [],
   "completed": [
     {
@@ -76,61 +86,57 @@
           "安全点与安全区域"
         ],
         "questionCount": 9,
-        "nextReview": "2026-03-14（第 1 次复习）"
+        "nextReview": "2026-03-14（随机抽题复习）"
       }
     }
   ],
   "schedule": {
-    "reviews": [
-      {
-        "id": "java-base-review-1-20260314",
-        "type": "review",
-        "content": "Java 基础篇 第 1 次复习（56 题，艾宾浩斯）",
-        "dueDate": "2026-03-14",
-        "priority": "high",
-        "estimatedTime": "60-90 分钟"
+    "daily": {
+      "2026-03-14": [
+        {
+          "time": "08:30-09:00",
+          "type": "review",
+          "content": "JVM Day 2 复习（随机 5-9 题）",
+          "priority": "high",
+          "note": "刚学的，优先复习"
+        },
+        {
+          "time": "09:00-10:00",
+          "type": "review",
+          "content": "集合框架复习（随机 10 题）",
+          "priority": "high"
+        },
+        {
+          "time": "14:00-15:00",
+          "type": "review",
+          "content": "Java 基础篇复习（随机 10 题）",
+          "priority": "medium"
+        }
+      ]
+    },
+    "weekly": {
+      "monday": {
+        "morning": "复习：Java 基础篇（随机 10 题）+ 学习：JVM"
       },
-      {
-        "id": "collection-review-1-20260314",
-        "type": "review",
-        "content": "集合框架 第 1 次复习（29 题，艾宾浩斯）",
-        "dueDate": "2026-03-14",
-        "priority": "high",
-        "estimatedTime": "45-60 分钟"
+      "tuesday": {
+        "morning": "复习：集合框架（随机 10 题）+ 学习：JVM"
       },
-      {
-        "id": "jvm-day2-review-1-20260314",
-        "type": "review",
-        "content": "JVM Day 2 第 1 次复习（9 题，艾宾浩斯）",
-        "dueDate": "2026-03-14",
-        "priority": "high",
-        "estimatedTime": "30 分钟"
+      "wednesday": {
+        "morning": "复习：JVM 篇（随机 10 题）+ 学习：并发"
       },
-      {
-        "id": "jvm-day1-review-2-20260315",
-        "type": "review",
-        "content": "JVM Day 1 第 2 次复习（9 题，3 天后）",
-        "dueDate": "2026-03-15",
-        "priority": "medium",
-        "estimatedTime": "30 分钟"
+      "thursday": {
+        "morning": "复习：Java 基础篇（随机 10 题）+ 学习：并发"
       },
-      {
-        "id": "java-base-review-2-20260316",
-        "type": "review",
-        "content": "Java 基础篇 第 2 次复习（56 题，3 天后）",
-        "dueDate": "2026-03-16",
-        "priority": "medium",
-        "estimatedTime": "60-90 分钟"
+      "friday": {
+        "morning": "复习：集合框架（随机 10 题）+ 学习：MySQL/Redis"
       },
-      {
-        "id": "collection-review-2-20260316",
-        "type": "review",
-        "content": "集合框架 第 2 次复习（29 题，3 天后）",
-        "dueDate": "2026-03-16",
-        "priority": "medium",
-        "estimatedTime": "45-60 分钟"
+      "saturday": {
+        "note": "缓冲日（补漏/休息/机动）"
+      },
+      "sunday": {
+        "afternoon": "薄弱知识点复习（所有🔴薄弱项）+ 模拟面试（20 题）"
       }
-    ],
+    },
     "learning": [
       {
         "id": "jvm-day3-20260315",
@@ -141,5 +147,15 @@
       }
     ]
   },
-  "notes": "2026-03-13: 启用复习计划机制，学习和复习分离。JVM Day 2 完成（讲解模式）"
+  "masteryThreshold": {
+    "scale": {
+      "weak": {"range": "<3 分", "mark": "🔴", "action": "必须复习（周日重点）"},
+      "improve": {"range": "3-3.5 分", "mark": "🟡", "action": "建议复习"},
+      "proficient": {"range": "≥4 分", "mark": "🟢", "action": "正常复习"},
+      "master": {"range": "5/5 连续 2 次", "mark": "✅", "action": "可跳过（需用户确认）"}
+    },
+    "enabled": false,
+    "note": "默认所有知识点都参与复习，除非用户说'按掌握度阈值跳过'"
+  },
+  "notes": "2026-03-13: 优化复习策略 - 章节轮转 + 随机抽题（每次 10 题），周日薄弱项 + 模拟面试，周六缓冲日"
 }
