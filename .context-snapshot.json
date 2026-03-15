@@ -1,6 +1,6 @@
 {
-  "lastUpdate": "2026-03-15T15:45:00+08:00",
-  "sessionId": "2026-03-15-afternoon",
+  "lastUpdate": "2026-03-15T22:00:00+08:00",
+  "sessionId": "2026-03-15-night",
   "currentModule": "JVM 篇",
   "progress": {
     "javaBase": {
@@ -19,9 +19,9 @@
     },
     "jvm": {
       "total": "约 50 题",
-      "completed": "Day 1-2 复习完成 (18 题×2 次)",
-      "percentage": "约 35%",
-      "avgScore": "4.2/5",
+      "completed": "Day 1-3 完成 (28 题)",
+      "percentage": "约 55%",
+      "avgScore": "3.7/5",
       "status": "🔄 进行中"
     }
   },
@@ -52,24 +52,32 @@
   "todayPlan": {
     "morning": "JVM Day 1 第 2 次复习（9 题）✅ 完成 4.5/5",
     "afternoon": "JVM Day 2 第 1 次复习（9 题）✅ 完成 3.9/5",
-    "evening": "随机复习 6 题 ✅ 完成 4.4/5"
+    "evening": "随机复习 6 题 ✅ 完成 4.4/5 + JVM Day 3 10 题 ✅ 完成 2.7/5"
   },
   "weaknesses": {
-    "current": ["GC Roots 类型 (0/5)", "四种引用类型 (3.5/5)"],
+    "current": [
+      "GC Roots 类型 (0/5)",
+      "四种引用类型 (3.5/5)",
+      "CMS 阶段 (0/5)",
+      "CMS vs G1 (0/5)",
+      "收集器搭配 (2.5/5)",
+      "GC 日志分析 (2/5)",
+      "G1 vs CMS 选择 (0/5)"
+    ],
     "fixing": [],
     "fixed": ["对象内存布局 (0/5→5/5)", "堆 vs 栈区别 (3.5/5→4/5)"]
   },
   "nextActions": [
-    "明日巩固 GC Roots 和四种引用",
-    "JVM Day 2 第 2 次复习（03-18）",
-    "继续 JVM Day 3（垃圾回收器）"
+    "明日复习 JVM Day 3（CMS+G1 重点）",
+    "巩固 GC Roots 和四种引用",
+    "JVM Day 2 第 2 次复习（03-18）"
   ],
   "todaySummary": {
     "date": "2026-03-15",
-    "totalTasks": 3,
-    "completedTasks": 3,
-    "avgScore": "4.3/5",
-    "highlights": ["对象内存布局 +5 分进步", "随机复习机制优化完成"],
-    "systemUpdates": ["创建.context-snapshot.json", "创建.memory/dialogs/", "更新 SOUL.md"]
+    "totalTasks": 4,
+    "completedTasks": 4,
+    "avgScore": "3.9/5",
+    "highlights": ["对象内存布局 +5 分进步", "随机复习机制优化完成", "系统优化 3 个新文件"],
+    "systemUpdates": ["创建.context-snapshot.json", "创建.random-review-state.json", "创建.memory/dialogs/", "更新 SOUL.md", "更新 HEARTBEAT.md"]
   }
 }
