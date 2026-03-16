@@ -5,7 +5,7 @@
 - [ ] 检查是否有未发送的日报（22:30 前）
 - [ ] 检查备份日志 `/root/logs/oc-backup.log` 是否有错误
 - [ ] 检查复习进度是否更新（对比 MEMORY.md 和实际进度）
-- [ ] **检查随机复习是否完成**：读取 `.random-review-state.json`，如果 `lastReviewDate` 早于今天且当前时间 > 20:00，提醒用户完成随机复习
+- [ ] **检查随机复习是否完成**：读取 `.random-review-state.json`，如果 `lastReviewDate` 早于今天且当前时间 > 20:00，提醒用户完成随机复习（10-15 题）
 
 ## 每周日额外检查
 - [ ] 生成周报复盘（更新 MEMORY.md 第 4 节）

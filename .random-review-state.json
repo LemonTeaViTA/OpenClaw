@@ -46,7 +46,7 @@
   },
   "rules": {
     "frequency": "daily",
-    "questionCount": "5-8",
+    "questionCount": "10-15",
     "timeWindow": "after 20:00",
     "source": "javaBase + collection (85 题混合随机)"
   }
