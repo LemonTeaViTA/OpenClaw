@@ -2,6 +2,11 @@
 Obsidian/
 PaiSmart/
 
+# 敏感文件（Token/密码）
+.secure_tokens.sh
+*.token
+*.secret
+
 # 临时文件
 *.log
 *.tmp
