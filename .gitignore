@@ -7,6 +7,12 @@ PaiSmart/
 *.token
 *.secret
 
+# 大文件（PDF > 50MB，GitHub 限制）
+*.pdf
+
+# 可选：如果某些 PDF 需要上传，手动 ! 取消忽略
+# !files/java-notes/important.pdf
+
 # 临时文件
 *.log
 *.tmp
