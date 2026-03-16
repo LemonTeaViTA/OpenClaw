@@ -1,0 +1,219 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+const path = require('path');
+
+// 简单的 filesystem 工具实现
+const commands = {
+  list: (args) => {
+    const targetPath = args.path || '.';
+    const recursive = args.recursive || false;
+    const filter = args.filter || '*';
+    
+    try {
+      const files = readDir(targetPath, recursive, filter);
+      console.log(formatTable(files));
+    } catch (e) {
+      console.error('Error:', e.message);
+    }
+  },
+  
+  search: (args) => {
+    const pattern = args.pattern;
+    const targetPath = args.path || '.';
+    const content = args.content || false;
+    
+    if (!pattern) {
+      console.log('Usage: filesystem search --pattern <pattern> [--path <dir>] [--content]');
+      return;
+    }
+    
+    try {
+      const results = searchFiles(targetPath, pattern, content);
+      results.forEach(r => console.log(r));
+    } catch (e) {
+      console.error('Error:', e.message);
+    }
+  },
+  
+  tree: (args) => {
+    const targetPath = args.path || '.';
+    const depth = args.depth || 3;
+    
+    try {
+      console.log(printTree(targetPath, 0, depth));
+    } catch (e) {
+      console.error('Error:', e.message);
+    }
+  },
+  
+  analyze: (args) => {
+    const targetPath = args.path || '.';
+    try {
+      const stats = analyzeDir(targetPath);
+      console.log('Directory Analysis:');
+      console.log(`  Total Files: ${stats.files}`);
+      console.log(`  Total Directories: ${stats.dirs}`);
+      console.log(`  Total Size: ${formatSize(stats.size)}`);
+    } catch (e) {
+      console.error('Error:', e.message);
+    }
+  },
+  
+  help: () => {
+    console.log(`
+📁 Filesystem Tool - Basic Commands
+
+Usage: filesystem <command> [options]
+
+Commands:
+  list      - List files with optional filtering
+  search    - Search files by name or content
+  tree      - Display directory tree
+  analyze   - Analyze directory statistics
+  help      - Show this help
+
+Examples:
+  filesystem list --path /home --recursive
+  filesystem search --pattern "*.log" --content
+  filesystem tree --depth 2
+  filesystem analyze --path /var/log
+`);
+  }
+};
+
+function readDir(dir, recursive, filter) {
+  const results = [];
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+    
+    if (filter !== '*' && !entry.name.includes(filter.replace('*', ''))) {
+      continue;
+    }
+    
+    results.push({
+      name: entry.name,
+      type: entry.isDirectory() ? 'dir' : 'file',
+      path: fullPath
+    });
+    
+    if (recursive && entry.isDirectory()) {
+      results.push(...readDir(fullPath, recursive, filter));
+    }
+  }
+  
+  return results;
+}
+
+function searchFiles(dir, pattern, contentSearch) {
+  const results = [];
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  
+  for (const entry of entries) {
+    if (entry.isDirectory()) {
+      if (!['node_modules', '.git', '.svn'].includes(entry.name)) {
+        results.push(...searchFiles(path.join(dir, entry.name), pattern, contentSearch));
+      }
+    } else if (entry.name.includes(pattern.replace('*', ''))) {
+      results.push(path.join(dir, entry.name));
+    } else if (contentSearch) {
+      try {
+        const content = fs.readFileSync(path.join(dir, entry.name), 'utf8');
+        if (content.includes(pattern)) {
+          results.push(`${path.join(dir, entry.name)} (content match)`);
+        }
+      } catch (e) {
+        // Skip binary files
+      }
+    }
+  }
+  
+  return results;
+}
+
+function printTree(dir, level, maxDepth) {
+  if (level > maxDepth) return '';
+  
+  let result = '';
+  const indent = '  '.repeat(level);
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  
+  for (let i = 0; i < entries.length; i++) {
+    const entry = entries[i];
+    const isLast = i === entries.length - 1;
+    const prefix = isLast ? '└── ' : '├── ';
+    
+    result += `${indent}${prefix}${entry.name}${entry.isDirectory() ? '/' : ''}\n`;
+    
+    if (entry.isDirectory() && level < maxDepth) {
+      result += printTree(path.join(dir, entry.name), level + 1, maxDepth);
+    }
+  }
+  
+  return result;
+}
+
+function analyzeDir(dir) {
+  let files = 0, dirs = 0, size = 0;
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+    
+    if (entry.isDirectory()) {
+      dirs++;
+      const subStats = analyzeDir(fullPath);
+      files += subStats.files;
+      dirs += subStats.dirs;
+      size += subStats.size;
+    } else {
+      files++;
+      try {
+        size += fs.statSync(fullPath).size;
+      } catch (e) {}
+    }
+  }
+  
+  return { files, dirs, size };
+}
+
+function formatTable(items) {
+  if (items.length === 0) return 'No items found.';
+  return items.map(i => `${i.type === 'dir' ? '📁' : '📄'} ${i.name}`).join('\n');
+}
+
+function formatSize(bytes) {
+  const units = ['B', 'KB', 'MB', 'GB'];
+  let unit = 0;
+  while (bytes >= 1024 && unit < units.length - 1) {
+    bytes /= 1024;
+    unit++;
+  }
+  return `${bytes.toFixed(1)} ${units[unit]}`;
+}
+
+// Parse arguments
+const args = process.argv.slice(2);
+const command = args[0];
+const options = {};
+
+for (let i = 1; i < args.length; i++) {
+  if (args[i].startsWith('--')) {
+    const key = args[i].slice(2);
+    const value = args[i + 1] && !args[i + 1].startsWith('--') ? args[++i] : true;
+    options[key] = value;
+  } else if (args[i].startsWith('-')) {
+    const key = args[i].slice(1);
+    const value = args[i + 1] && !args[i + 1].startsWith('-') ? args[++i] : true;
+    options[key] = value;
+  }
+}
+
+// Execute command
+if (command && commands[command]) {
+  commands[command](options);
+} else {
+  commands.help();
+}
