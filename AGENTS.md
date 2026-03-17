@@ -12,10 +12,34 @@ Before doing anything else:
 
 1. Read `SOUL.md` — this is who you are
 2. Read `USER.md` — this is who you're helping
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+3. Read `.context-snapshot.json` — current progress, active rules, preferences
+4. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+5. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
 
 Don't ask permission. Just do it.
+
+## 📚 Learning & Review Workflow (丁同学's Setup)
+
+**Learning Modes:**
+- 🎓 **Learning Mode** (new knowledge): Explain first → Check understanding → Quiz → Record scores
+- 📚 **Review Mode** (old knowledge): Quiz first → Score → Follow-up questions → Fill gaps
+- 🎲 **Random Review** (daily after 20:00): Heartbeat check → Random 10-15 questions → Quiz
+
+**Documentation:**
+- `memory/学习与复习流程标准.md` — Full learning & review workflow
+- `memory/随机复习流程.md` — Random review process
+- `memory/java-questions/` — Detailed answer records by chapter
+
+**Recording Principle:**
+- ✅ Only record weak points / missing points (1 sentence)
+- ❌ Don't record full answer content
+- ❌ Don't record details for scores ≥4/5
+
+**Score Tracking:**
+- 5/5 = Perfect (just record date)
+- 4/5 = Minor gaps (record missing points)
+- 3/5 = Half correct (record + add to weaknesses)
+- <3/5 = Weak (record + add to MEMORY.md weaknesses)
 
 ## Memory
 

@@ -7,7 +7,7 @@
 import re
 from pathlib import Path
 
-OCR_DIR = Path("C:\Users\11237\.openclaw-autoclaw\workspace/memory/java-ocr")
+OCR_DIR = Path(r"C:\Users\11237\.openclaw-autoclaw\workspace\memory\java-ocr")
 OUTPUT_FILE = OCR_DIR / "题目清单提取.md"
 
 def extract_questions_from_ocr():

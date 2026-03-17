@@ -1,7 +1,7 @@
-﻿{
-  "lastUpdate": "2026-03-15T22:00:00+08:00",
-  "sessionId": "2026-03-15-night",
-  "currentModule": "JVM 篇",
+{
+  "lastUpdate": "2026-03-17T14:30:00+08:00",
+  "sessionId": "2026-03-17-afternoon",
+  "currentModule": "集合框架篇 - 未学题目完成",
   "progress": {
     "javaBase": {
       "total": 56,
@@ -11,11 +11,12 @@
       "status": "✅ 已完成"
     },
     "collection": {
-      "total": 29,
-      "completed": 29,
-      "percentage": "100%",
-      "avgScore": "4.6/5",
-      "status": "✅ 已完成"
+      "total": 37,
+      "completed": 35,
+      "percentage": "95%",
+      "avgScore": "3.5/5",
+      "status": "🔄 进行中",
+      "remaining": "2 题待巩固"
     },
     "jvm": {
       "total": "约 50 题",
@@ -29,7 +30,7 @@
     "randomReview": {
       "scope": "Java 基础篇 (56 题) + 集合框架 (29 题) = 85 题",
       "frequency": "每日 1 次",
-      "questionCount": "5-8 题",
+      "questionCount": "10-15 题",
       "timeWindow": "20:00 后",
       "tracking": ".random-review-state.json"
     },
@@ -41,43 +42,106 @@
     "heartbeat": {
       "checks": ["早报", "日报", "备份日志", "复习进度", "随机复习"],
       "frequency": "每 30 分钟"
+    },
+    "recordingPrinciple": {
+      "record": "扣分点/遗漏点/错误点（1 句话）",
+      "dontRecord": "完整答题内容、得分≥4 分的细节"
     }
   },
   "userPreferences": {
     "learningMode": "先讲解后测试（JVM 新知识）",
     "feedbackStyle": "直接指出错误，不要表演",
     "communicationStyle": "干练、直接、专业",
-    "codeAccess": "只读（严禁修改 C:\Users\11237\.openclaw-autoclaw\workspace\pai-smart）"
+    "codeAccess": "只读（严禁修改 C:\\Users\\11237\\.openclaw-autoclaw\\workspace\\pai-smart）",
+    "device": "手机（无法敲代码，口述思路）"
   },
   "todayPlan": {
-    "morning": "JVM Day 1 第 2 次复习（9 题）✅ 完成 4.5/5",
-    "afternoon": "JVM Day 2 第 1 次复习（9 题）✅ 完成 3.9/5",
-    "evening": "随机复习 6 题 ✅ 完成 4.4/5 + JVM Day 3 10 题 ✅ 完成 2.7/5"
+    "morning": "集合框架未学题目（10 题）✅ 完成",
+    "afternoon": "随机复习（12 题）✅ 完成 3.4/5",
+    "evening": "JVM Day 3 第 1 次复习✅ + GC 日志分析 5/5 + 创建线程 5/5 + JVM Day 4 学习 7 题✅"
+  },
+  "todaySummary": {
+    "date": "2026-03-17",
+    "tasks": [
+      "集合框架未学题目 10 题 ✅ 讲解完成",
+      "集合框架测试 5 题 ✅ 2.9/5",
+      "随机复习 12 题 ✅ 3.4/5",
+      "JVM Day 3 复习 10 题 ✅ 3.5/5",
+      "GC 日志分析专项 ✅ 5/5 攻克",
+      "创建线程方式专项 ✅ 5/5 攻克",
+      "JVM Day 4 学习 7 题 ✅ 讲解完成"
+    ],
+    "avgScore": "3.5/5",
+    "highlights": [
+      "GC 日志分析 0/5→5/5 🎉",
+      "创建线程方式 0/5→5/5 🎉",
+      "CMS 阶段 0/5→4.5/5 🎉",
+      "CMS vs G1 0/5→3.5/5 🎉"
+    ],
+    "weaknessesFixed": [
+      "GC 日志分析 (0/5→5/5)",
+      "创建线程方式 (0/5→5/5)"
+    ]
   },
   "weaknesses": {
     "current": [
       "GC Roots 类型 (0/5)",
-      "四种引用类型 (3.5/5)",
       "CMS 阶段 (0/5)",
       "CMS vs G1 (0/5)",
-      "收集器搭配 (2.5/5)",
+      "G1 vs CMS 选择 (0/5)",
+      "创建线程方式 (0/5)",
+      "阻塞队列实现方式 (2/5)",
+      "哈希冲突解决 (2/5)",
+      "反射优缺点 (2/5)",
       "GC 日志分析 (2/5)",
-      "G1 vs CMS 选择 (0/5)"
+      "收集器搭配 (2.5/5)",
+      "四种引用类型 (3.5/5)",
+      "HashMap 查找过程 (3/5)",
+      "HashSet 底层 (3/5)",
+      "ArrayList vs LinkedList (3/5)",
+      "队列 vs 栈实现 (3/5)"
     ],
     "fixing": [],
     "fixed": ["对象内存布局 (0/5→5/5)", "堆 vs 栈区别 (3.5/5→4/5)"]
   },
   "nextActions": [
-    "明日复习 JVM Day 3（CMS+G1 重点）",
-    "巩固 GC Roots 和四种引用",
-    "JVM Day 2 第 2 次复习（03-18）"
+    "JVM Day 3 第 1 次复习（CMS+G1 重点）",
+    "复习创建线程方式（4 种）",
+    "复习反射优缺点",
+    "巩固阻塞队列实现方式"
   ],
   "todaySummary": {
-    "date": "2026-03-15",
-    "totalTasks": 4,
-    "completedTasks": 4,
-    "avgScore": "3.9/5",
-    "highlights": ["对象内存布局 +5 分进步", "随机复习机制优化完成", "系统优化 3 个新文件"],
-    "systemUpdates": ["创建.context-snapshot.json", "创建.random-review-state.json", "创建.memory/dialogs/", "更新 SOUL.md", "更新 HEARTBEAT.md"]
+    "date": "2026-03-17",
+    "tasks": [
+      "集合框架未学题目 10 题 ✅ 讲解完成",
+      "集合框架测试 5 题 ✅ 2.9/5",
+      "随机复习 12 题 ✅ 3.4/5"
+    ],
+    "avgScore": "3.2/5",
+    "highlights": [
+      "集合框架未学题目全部讲解完成",
+      "try-catch-finally 返回值 5/5",
+      "final 三兄弟 4.5/5"
+    ],
+    "weaknessesExposed": [
+      "创建线程方式 (0/5) - 完全不会",
+      "反射优缺点 (2/5) - 忘记了",
+      "阻塞队列实现 (2/5) - 概念混淆"
+    ],
+    "systemUpdates": [
+      "更新 MEMORY.md 薄弱项",
+      "更新 .random-review-state.json",
+      "更新集合框架答题记录"
+    ]
+  },
+  "systemFiles": {
+    "soul": "SOUL.md",
+    "user": "USER.md",
+    "memory": "MEMORY.md",
+    "heartbeat": "HEARTBEAT.md",
+    "agents": "AGENTS.md",
+    "learningWorkflow": "memory/学习与复习流程标准.md",
+    "randomReview": "memory/随机复习流程.md",
+    "answerRecords": "memory/java-questions/"
   }
 }
