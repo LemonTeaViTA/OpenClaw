@@ -1,0 +1,68 @@
+{
+  "lastSession": "2026-03-19-session-1",
+  "scheduledReviews": [
+    {
+      "topic": "JVM Day 1 - 内存区域",
+      "nextReview": "2026-03-22",
+      "reviewCount": 2,
+      "lastReview": "2026-03-15",
+      "file": "memory/reviews/jvm-day1-review-2026-03-15.md"
+    },
+    {
+      "topic": "JVM Day 2 - 垃圾回收基础",
+      "nextReview": "2026-03-22",
+      "reviewCount": 2,
+      "lastReview": "2026-03-19",
+      "file": "memory/reviews/jvm-day2-review-2026-03-19.md"
+    },
+    {
+      "topic": "JVM Day 3 - 垃圾回收器",
+      "nextReview": "2026-03-20",
+      "reviewCount": 1,
+      "lastReview": "2026-03-15",
+      "file": "memory/reviews/jvm-day3-review-2026-03-15.md"
+    }
+  ],
+  "randomReview": {
+    "lastReview": "2026-03-18",
+    "nextReview": "2026-03-19"
+  },
+  "weaknesses": {
+    "四种引用类型": {
+      "score": 4,
+      "lastReview": "2026-03-19",
+      "nextReview": "2026-03-22",
+      "source": "jvm-day2"
+    },
+    "收集器搭配原则": {
+      "score": 3.5,
+      "lastReview": "2026-03-19",
+      "nextReview": "2026-03-21",
+      "source": "jvm-day2"
+    },
+    "收集器选择场景": {
+      "score": 3.5,
+      "lastReview": "2026-03-19",
+      "nextReview": "2026-03-21",
+      "source": "jvm-day3"
+    },
+    "创建线程方式": {
+      "score": 3.5,
+      "lastReview": "2026-03-18",
+      "nextReview": "2026-03-20",
+      "source": "random-review"
+    },
+    "反射优缺点": {
+      "score": 3,
+      "lastReview": "2026-03-18",
+      "nextReview": "2026-03-20",
+      "source": "random-review"
+    },
+    "队列 vs 栈实现": {
+      "score": 3.5,
+      "lastReview": "2026-03-18",
+      "nextReview": "2026-03-20",
+      "source": "random-review"
+    }
+  }
+}
