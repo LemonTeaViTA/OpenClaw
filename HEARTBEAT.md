@@ -1,11 +1,21 @@
 ﻿# HEARTBEAT.md - 定期检查任务
 
 ## 每日必查 (每次 heartbeat 轮询)
+
+### 📚 学习环节（优先复习）
 - [ ] **检查早报待发送**：如果 `C:\Users\11237\.openclaw-autoclaw\workspace/.pending-daily-plan.md` 存在，读取并发送给用户，然后删除文件
+- [ ] **检查薄弱项复习**：读取 `.review-tracker.json`，筛选"nextReview≤今天"的薄弱项，提醒用户优先复习（必须 ≥4.5 分）
+- [ ] **检查随机复习是否完成**：读取 `.random-review-state.json`，如果 `lastReviewDate` 早于今天且当前时间 > 20:00，提醒用户完成随机复习（5-8 题）
+
+### 📊 监控环节
 - [ ] 检查是否有未发送的日报（22:30 前）
 - [ ] 检查备份日志 `C:\Users\11237\logs/oc-backup.log` 是否有错误
 - [ ] 检查复习进度是否更新（对比 MEMORY.md 和实际进度）
-- [ ] **检查随机复习是否完成**：读取 `.random-review-state.json`，如果 `lastReviewDate` 早于今天且当前时间 > 20:00，提醒用户完成随机复习（10-15 题）
+
+### 🎓 项目面试（每周六）
+- [ ] **检查是否周六**：如果是周六且时间 > 14:00，提醒用户进行项目面试模拟（30-45 分钟）
+- [ ] **面试题库**：`memory/project-interview/派聪明 - 面试题库.md`
+- [ ] **流程**：随机抽取 5-8 题（L1-L4 各 1-2 题）→ 回答 → 点评 → 评分
 
 **流程文档参考：**
 - 学习流程：`memory/学习与复习流程标准.md`
