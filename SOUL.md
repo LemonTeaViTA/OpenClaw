@@ -177,9 +177,39 @@
 3. `MEMORY.md` - 薄弱项、错题、进度
 4. `HEARTBEAT.md` - 检查是否有待办任务
 
-**会话结束必做清单：**
-1. 更新 `.context-snapshot.json` - 进度、薄弱项、下一步行动
-2. 更新 `MEMORY.md` - 如有新薄弱项或策略调整
-3. 如有代码分析，更新 `memory/project-notes/` - 项目认知
+**会话结束必做清单（强制 - 2026-03-20 更新）**：
+
+1. **更新 `.context-snapshot.json`**（每次会话必须！）
+   - `lastUpdate`: 当前时间戳（ISO 8601 格式）
+   - `sessionId`: 会话 ID（格式：YYYY-MM-DD-主题）
+   - `todaySession`: 今日完成的任务列表
+   - `nextReview`: 下次复习计划（日期 + 任务）
+   - `progress`: 如有进度变化，更新各模块完成率
+   - **检查**：确保 `lastUpdate` 是今天，否则 heartbeat 会报警
+
+2. **更新 `.review-tracker.json`**（如有复习/学习）
+   - `lastSession`: 当前会话 ID
+   - `scheduledReviews`: 更新下次复习日期（艾宾浩斯曲线）
+   - `weaknesses`: 更新薄弱项分数和下次复习时间
+   - `todayCompleted`: 添加今日完成的会话记录
+
+3. **更新 `MEMORY.md`** - 如有新薄弱项、错题或策略调整
+   - 第 1 节：更新薄弱项表格（分数变化、下次复习）
+   - 第 7.5 节：更新随机复习记录
+   - 第 21 节：添加今日学习总结
+
+4. **创建会话记录文件**（如未创建）
+   - `memory/sessions/YYYY-MM-DD-session-N.md` - 详细答题记录
+   - `memory/reviews/章节-review-YYYY-MM-DD.md` - 章节复习记录
+   - `memory/weaknesses/YYYY-MM-DD.md` - 薄弱项复习记录
+
+5. **告知用户**（简短确认）
+   - "✅ 已更新上下文快照和复习追踪"
+   - 如有系统改进，说明变更内容
+
+**快捷命令（用户可随时触发）**：
+- "更新上下文" → 立即执行上述 1-2 步
+- "同步进度" → 同上 + 检查 MEMORY.md 一致性
+- "刷新快照" → 强制重新读取所有进度文件并更新
 
 这个文件属于你的进化历程。随着你更了解丁同学和项目，随时更新它。

@@ -1,67 +1,106 @@
 {
-  "lastReviewDate": "2026-03-18",
+  "lastReviewDate": "2026-03-21",
+  "todayDate": "2026-03-21",
   "todayQuestionIds": [
-    "java-008",
-    "coll-016",
-    "coll-018",
-    "coll-030",
-    "coll-016",
+    "java-001",
+    "java-004",
+    "java-056",
     "java-057",
-    "java-053",
-    "coll-006"
+    "coll-004",
+    "coll-005",
+    "coll-029",
+    "coll-030",
+    "java-054",
+    "coll-031"
   ],
-  "completedRounds": 0,
+  "excludeIds": [
+    "java-001",
+    "java-004",
+    "java-056",
+    "java-057",
+    "coll-004",
+    "coll-005",
+    "coll-029",
+    "coll-030",
+    "java-054",
+    "coll-031",
+    "java-006",
+    "java-007",
+    "java-010",
+    "java-011",
+    "coll-001",
+    "coll-002",
+    "coll-007",
+    "coll-027"
+  ],
+  "completedRounds": 1,
   "round1Progress": {
     "total": 85,
-    "completed": 22,
-    "remaining": 63,
+    "completed": 40,
+    "remaining": 45,
     "completedIds": [
       "java-001",
       "java-002",
       "java-003",
       "java-004",
       "java-005",
+      "java-006",
+      "java-007",
       "java-008",
       "java-009",
+      "java-010",
+      "java-011",
       "java-015",
       "java-053",
+      "java-054",
+      "java-056",
       "java-057",
+      "coll-001",
+      "coll-002",
       "coll-004",
+      "coll-005",
       "coll-006",
+      "coll-007",
       "coll-016",
       "coll-018",
+      "coll-021",
+      "coll-027",
       "coll-029",
-      "coll-030"
+      "coll-030",
+      "coll-031"
     ]
   },
   "weaknesses": [
-    {"id": "java-057", "score": 3.5, "topic": "创建线程方式", "lastScore": 0, "progress": "+3.5"},
-    {"id": "java-053", "score": 3, "topic": "反射优缺点", "lastScore": 2, "progress": "+1"},
-    {"id": "coll-029", "score": 4.5, "topic": "HashSet 底层实现", "lastScore": 3, "progress": "+1.5"},
-    {"id": "coll-004", "score": 4.5, "topic": "ArrayList vs LinkedList", "lastScore": 3, "progress": "+1.5"},
-    {"id": "coll-006", "score": 3.5, "topic": "队列 vs 栈", "lastScore": 3, "progress": "+0.5"}
+    {"id": "coll-025", "score": 1.5, "topic": "ConcurrentHashMap 原理", "lastScore": 1.5, "progress": "0"},
+    {"id": "java-054", "score": 2.5, "topic": "sleep vs wait", "lastScore": 2.5, "progress": "0"},
+    {"id": "java-001", "score": 3.5, "topic": "== vs equals", "lastScore": 3.5, "progress": "0"},
+    {"id": "java-004", "score": 3.5, "topic": "final/finally/finalize", "lastScore": 3.5, "progress": "0"},
+    {"id": "java-056", "score": 3.5, "topic": "String 三兄弟", "lastScore": 3.5, "progress": "0"},
+    {"id": "java-057", "score": 3, "topic": "throw vs throws", "lastScore": 3, "progress": "0"},
+    {"id": "coll-031", "score": 3.5, "topic": "HashSet vs ArrayList", "lastScore": 3.5, "progress": "0"}
   ],
   "todaySummary": {
-    "date": "2026-03-19",
-    "questionCount": 8,
-    "score": "3.6/5",
-    "scoringStandard": "严格版（2026-03-19 更新）",
+    "date": "2026-03-21",
+    "questionCount": 10,
+    "score": "3.4/5",
+    "scoringStandard": "严格版",
     "highlights": [
-      "HashSet 底层实现 5/5 🎉",
-      "ArrayList vs LinkedList 5/5 🎉"
+      "ArrayList vs LinkedList 4.5/5 🎉",
+      "HashMap 数据结构 4/5 ✅",
+      "创建线程方式 4/5 ✅"
     ],
     "weaknesses": [
-      "反射优缺点 2/5（缺点完全忘记）🔴",
-      "HashMap vs HashTable 2.5/5（null key 问题不会）🔴",
-      "String 不可变性好处 3.5/5（只答安全性）🟡",
-      "队列 vs 栈实现类 3/5（类名说错）🟡"
+      "ConcurrentHashMap 原理 1.5/5（完全忘记 1.7vs1.8 区别）🔴",
+      "sleep vs wait 2.5/5（锁释放核心区别没说）🔴",
+      "String 性能排序 3.5/5（说反了）🟡",
+      "HashSet null 允许 3.5/5（说反了）🟡"
     ]
   },
-  "nextReviewDate": "2026-03-20",
+  "nextReviewDate": "2026-03-22",
   "rules": {
     "excludeToday": true,
     "excludeRound1Completed": false,
     "prioritizeWeaknesses": true,
-    "questionCount": "8-10"
+    "questionCount": "10-15"
   }
 }

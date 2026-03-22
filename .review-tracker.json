@@ -1,5 +1,7 @@
 {
-  "lastSession": "2026-03-19-session-1",
+  "lastSession": "2026-03-20-JVM-Day3-Review-Weakness",
+  "lastUpdate": "2026-03-20T12:45:00+08:00",
+  
   "scheduledReviews": [
     {
       "topic": "JVM Day 1 - 内存区域",
@@ -10,59 +12,187 @@
     },
     {
       "topic": "JVM Day 2 - 垃圾回收基础",
-      "nextReview": "2026-03-22",
-      "reviewCount": 2,
+      "nextReview": "2026-03-26",
+      "reviewCount": 3,
       "lastReview": "2026-03-19",
       "file": "memory/reviews/jvm-day2-review-2026-03-19.md"
     },
     {
       "topic": "JVM Day 3 - 垃圾回收器",
-      "nextReview": "2026-03-20",
-      "reviewCount": 1,
-      "lastReview": "2026-03-15",
-      "file": "memory/reviews/jvm-day3-review-2026-03-15.md"
+      "nextReview": "2026-03-27",
+      "reviewCount": 3,
+      "lastReview": "2026-03-20",
+      "file": "memory/reviews/jvm-day3-review-2026-03-20.md"
+    },
+    {
+      "topic": "JVM Day 4 - 调优参数",
+      "nextReview": "2026-03-21",
+      "reviewCount": 0,
+      "lastReview": null,
+      "file": "memory/java-questions/JVM 篇 - 答题记录.md"
+    },
+    {
+      "topic": "JVM Day 5 - JIT 编译与字节码",
+      "nextReview": "2026-03-21",
+      "reviewCount": 0,
+      "lastReview": null,
+      "file": "memory/java-questions/JVM 篇 - 答题记录.md"
+    },
+    {
+      "topic": "JVM Day 6 - 类加载机制",
+      "nextReview": "2026-03-22",
+      "reviewCount": 0,
+      "lastReview": null,
+      "file": "memory/java-questions/JVM 篇 - 答题记录.md"
+    },
+    {
+      "topic": "JVM Day 7 - 性能监控工具",
+      "nextReview": "2026-03-21",
+      "reviewCount": 0,
+      "lastReview": null,
+      "file": "memory/java-questions/JVM 篇 - 答题记录.md"
     }
   ],
+  
   "randomReview": {
-    "lastReview": "2026-03-18",
-    "nextReview": "2026-03-19"
+    "lastReview": "2026-03-19",
+    "nextReview": "2026-03-20",
+    "scope": "Java 基础篇 (56 题) + 集合框架 (29 题) = 85 题",
+    "questionCount": "10-15 题"
   },
+  
   "weaknesses": {
-    "四种引用类型": {
-      "score": 4,
-      "lastReview": "2026-03-19",
-      "nextReview": "2026-03-22",
-      "source": "jvm-day2"
+    "JVM 篇": {
+      "四种引用类型": {
+        "score": 4,
+        "lastReview": "2026-03-19",
+        "nextReview": "2026-03-22",
+        "source": "jvm-day2"
+      },
+      "收集器搭配原则": {
+        "score": 3.5,
+        "lastReview": "2026-03-19",
+        "nextReview": "2026-03-21",
+        "source": "jvm-day2"
+      },
+      "收集器选择场景": {
+        "score": 3.5,
+        "lastReview": "2026-03-19",
+        "nextReview": "2026-03-21",
+        "source": "jvm-day3"
+      },
+      "CAS 原理+ABA": {
+        "score": 4,
+        "lastReview": "2026-03-20",
+        "nextReview": "2026-03-23",
+        "source": "jvm-day4"
+      },
+      "线程安全实现": {
+        "score": 4,
+        "lastReview": "2026-03-20",
+        "nextReview": "2026-03-23",
+        "source": "jvm-day4"
+      },
+      "死锁 4 条件": {
+        "score": 3,
+        "lastReview": null,
+        "nextReview": "2026-03-21",
+        "source": "jvm-day4"
+      },
+      "调优参数": {
+        "score": 2.6,
+        "lastReview": null,
+        "nextReview": "2026-03-21",
+        "source": "jvm-day4"
+      },
+      "字节码指令集": {
+        "score": 0,
+        "lastReview": null,
+        "nextReview": "2026-03-21",
+        "source": "jvm-day5"
+      },
+      "类加载器范围": {
+        "score": 2.5,
+        "lastReview": null,
+        "nextReview": "2026-03-22",
+        "source": "jvm-day6"
+      },
+      "性能监控工具": {
+        "score": 0,
+        "lastReview": null,
+        "nextReview": "2026-03-21",
+        "source": "jvm-day7"
+      }
     },
-    "收集器搭配原则": {
-      "score": 3.5,
-      "lastReview": "2026-03-19",
-      "nextReview": "2026-03-21",
-      "source": "jvm-day2"
+    "集合框架篇": {
+      "阻塞队列实现方式": {
+        "score": 2,
+        "lastReview": null,
+        "nextReview": "2026-03-21",
+        "source": "collection-34"
+      },
+      "HashMap 查找过程": {
+        "score": 3,
+        "lastReview": null,
+        "nextReview": "2026-03-21",
+        "source": "collection-16"
+      },
+      "哈希冲突解决": {
+        "score": 2,
+        "lastReview": null,
+        "nextReview": "2026-03-21",
+        "source": "collection-18"
+      }
     },
-    "收集器选择场景": {
-      "score": 3.5,
-      "lastReview": "2026-03-19",
-      "nextReview": "2026-03-21",
-      "source": "jvm-day3"
-    },
-    "创建线程方式": {
-      "score": 3.5,
-      "lastReview": "2026-03-18",
-      "nextReview": "2026-03-20",
-      "source": "random-review"
-    },
-    "反射优缺点": {
-      "score": 3,
-      "lastReview": "2026-03-18",
-      "nextReview": "2026-03-20",
-      "source": "random-review"
-    },
-    "队列 vs 栈实现": {
-      "score": 3.5,
-      "lastReview": "2026-03-18",
-      "nextReview": "2026-03-20",
-      "source": "random-review"
+    "Java 基础篇": {
+      "创建线程方式": {
+        "score": 4,
+        "lastReview": "2026-03-20",
+        "nextReview": "2026-03-23",
+        "source": "random-review"
+      },
+      "反射优缺点": {
+        "score": 3.5,
+        "lastReview": "2026-03-20",
+        "nextReview": "2026-03-23",
+        "source": "random-review"
+      },
+      "队列 vs 栈实现": {
+        "score": 4,
+        "lastReview": "2026-03-20",
+        "nextReview": "2026-03-23",
+        "source": "random-review"
+      },
+      "HashMap vs HashTable": {
+        "score": 2.5,
+        "lastReview": "2026-03-19",
+        "nextReview": "2026-03-21",
+        "source": "random-review"
+      },
+      "String 不可变性好处": {
+        "score": 3.5,
+        "lastReview": "2026-03-19",
+        "nextReview": "2026-03-22",
+        "source": "random-review"
+      }
     }
+  },
+  
+  "todayCompleted": {
+    "date": "2026-03-20",
+    "sessions": [
+      {
+        "type": "review",
+        "topic": "JVM Day 3 第 3 次复习",
+        "score": "4.5/5",
+        "file": "memory/reviews/jvm-day3-review-2026-03-20.md"
+      },
+      {
+        "type": "weakness-review",
+        "topics": ["创建线程方式", "反射优缺点", "队列 vs 栈实现"],
+        "avgScore": "3.8/5",
+        "file": "memory/weaknesses/2026-03-20.md"
+      }
+    ]
   }
 }

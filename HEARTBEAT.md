@@ -2,6 +2,15 @@
 
 ## 每日必查 (每次 heartbeat 轮询)
 
+### 🔍 上下文完整性检查（最高优先级 - 2026-03-20 新增）
+- [ ] **检查 `.context-snapshot.json` 的 `lastUpdate` 是否是今天**
+  - 如果不是 → 读取 `memory/sessions/` 最新文件，自动更新快照
+  - 如果检测到进度不一致 → 立即通知用户"⚠️ 上下文快照过期，正在自动更新..."
+- [ ] **检查 `.review-tracker.json` 的 `lastUpdate` 是否是今天**
+  - 如果今天有学习/复习但文件未更新 → 提醒用户"复习记录未同步"
+- [ ] **检查 MEMORY.md 第 1 节薄弱项是否与 `.review-tracker.json` 一致**
+  - 如果分数/日期不一致 → 标记为"需人工核对"
+
 ### 📚 学习环节（优先复习）
 - [ ] **检查早报待发送**：如果 `C:\Users\11237\.openclaw-autoclaw\workspace/.pending-daily-plan.md` 存在，读取并发送给用户，然后删除文件
 - [ ] **检查薄弱项复习**：读取 `.review-tracker.json`，筛选"nextReview≤今天"的薄弱项，提醒用户优先复习（必须 ≥4.5 分）

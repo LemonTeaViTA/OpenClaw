@@ -1,33 +1,8 @@
 {
-  "lastUpdate": "2026-03-18T16:20:00+08:00",
-  "sessionId": "2026-03-18-JVM-Day3-4-Review",
-  "currentModule": "JVM Day 3 复习 + Day 4 学习完成",
-  "todaySummary": {
-    "date": "2026-03-18",
-    "tasks": [
-      "JVM Day 3 第 2 次复习（4.6/5，进步 +1.9 分）",
-      "JVM Day 4 学习 + 复习（3.9/5）"
-    ],
-    "highlights": [
-      "CMS 阶段：0/5 → 5/5（+5 分）🎉",
-      "GC 日志分析：0/5 → 4/5（+4 分）🎉",
-      "CMS vs G1:0/5 → 4.5/5（+4.5 分）🎉",
-      "G1 vs CMS 选择：0/5 → 4.5/5（+4.5 分）🎉"
-    ],
-    "weaknesses": [
-      "CAS 原理+ABA 问题（2.5/5）🔴",
-      "GC Roots 类型（0/5）🔴 - 未复习",
-      "死锁 4 条件（3/5）🟡",
-      "线程安全实现（3.5/5）🟡"
-    ]
-  },
-  "nextReview": {
-    "date": "2026-03-19",
-    "tasks": [
-      "JVM Day 2 第 3 次复习（艾宾浩斯·7 天后）",
-      "JVM Day 4 薄弱项巩固（CAS、死锁、线程安全）"
-    ]
-  },
+  "lastUpdate": "2026-03-21T22:30:00+08:00",
+  "sessionId": "2026-03-21-Collection-Finish-Random-Review",
+  "currentModule": "集合框架 100% 完成，随机复习完成",
+  
   "progress": {
     "javaBase": {
       "total": 56,
@@ -38,27 +13,52 @@
     },
     "collection": {
       "total": 37,
-      "completed": 35,
-      "percentage": "95%",
+      "completed": 37,
+      "percentage": "100%",
       "avgScore": "3.5/5",
-      "status": "🔄 进行中",
-      "remaining": "2 题待巩固"
+      "status": "✅ 已完成"
     },
     "jvm": {
-      "total": "约 50 题",
-      "completed": "Day 1-4 完成 (38 题)",
-      "percentage": "约 75%",
-      "avgScore": "4.0/5",
-      "status": "🔄 进行中",
-      "day1Score": "4.5/5",
-      "day2Score": "3.9/5",
-      "day3Score": "4.6/5",
-      "day4Score": "3.9/5"
+      "total": 66,
+      "completed": 66,
+      "percentage": "100%",
+      "avgScore": "3.8/5",
+      "status": "✅ 已完成",
+      "dayScores": {
+        "day1": "4.5/5",
+        "day2": "3.9/5",
+        "day3": "4.5/5",
+        "day4": "2.6/5",
+        "day5": "3.4/5",
+        "day6": "3.6/5",
+        "day7": "待测试"
+      }
     }
   },
+  
+  "todaySession": {
+    "date": "2026-03-21",
+    "completed": [
+      "集合框架收尾（题 19-20，37/37=100%）",
+      "随机复习（10 题，3.4/5）"
+    ],
+    "pending": [
+      "JVM 薄弱项巩固（ConcurrentHashMap、sleep vs wait）"
+    ]
+  },
+  
+  "nextReview": {
+    "date": "2026-03-22",
+    "tasks": [
+      "JVM 薄弱项复习（ConcurrentHashMap、sleep vs wait）",
+      "随机复习（10-15 题，20:00 后）",
+      "JVM Day 7 性能工具（待学习）"
+    ]
+  },
+  
   "activeRules": {
     "randomReview": {
-      "scope": "Java 基础篇 (56 题) + 集合框架 (29 题) = 85 题",
+      "scope": "Java 基础篇 (56 题) + 集合框架 (37 题) = 93 题",
       "frequency": "每日 1 次",
       "questionCount": "10-15 题",
       "timeWindow": "20:00 后",
@@ -67,10 +67,14 @@
     "reviewStrategy": {
       "method": "艾宾浩斯曲线",
       "schedule": "1 天/3 天/7 天/15 天",
-      "tracking": "MEMORY.md 第 1.5 节"
+      "tracking": ".review-tracker.json"
+    },
+    "sessionEndUpdate": {
+      "rule": "每次会话结束必须更新 .context-snapshot.json",
+      "fields": ["lastUpdate", "sessionId", "todaySession", "nextReview", "progress"]
     },
     "heartbeat": {
-      "checks": ["早报", "日报", "备份日志", "复习进度", "随机复习"],
+      "checks": ["早报", "日报", "备份日志", "复习进度", "随机复习", "上下文完整性"],
       "frequency": "每 30 分钟"
     },
     "recordingPrinciple": {
@@ -78,6 +82,7 @@
       "dontRecord": "完整答题内容、得分≥4 分的细节"
     }
   },
+  
   "userPreferences": {
     "learningMode": "先讲解后测试（JVM 新知识）",
     "feedbackStyle": "直接指出错误，不要表演",
@@ -85,93 +90,34 @@
     "codeAccess": "只读（严禁修改 C:\\Users\\11237\\.openclaw-autoclaw\\workspace\\pai-smart）",
     "device": "手机（无法敲代码，口述思路）"
   },
-  "todayPlan": {
-    "morning": "集合框架未学题目（10 题）✅ 完成",
-    "afternoon": "随机复习（12 题）✅ 完成 3.4/5",
-    "evening": "JVM Day 3 第 1 次复习✅ + GC 日志分析 5/5 + 创建线程 5/5 + JVM Day 4 学习 7 题✅"
-  },
-  "todaySummary": {
-    "date": "2026-03-17",
-    "tasks": [
-      "集合框架未学题目 10 题 ✅ 讲解完成",
-      "集合框架测试 5 题 ✅ 2.9/5",
-      "随机复习 12 题 ✅ 3.4/5",
-      "JVM Day 3 复习 10 题 ✅ 3.5/5",
-      "GC 日志分析专项 ✅ 5/5 攻克",
-      "创建线程方式专项 ✅ 5/5 攻克",
-      "JVM Day 4 学习 7 题 ✅ 讲解完成"
-    ],
-    "avgScore": "3.5/5",
-    "highlights": [
-      "GC 日志分析 0/5→5/5 🎉",
-      "创建线程方式 0/5→5/5 🎉",
-      "CMS 阶段 0/5→4.5/5 🎉",
-      "CMS vs G1 0/5→3.5/5 🎉"
-    ],
-    "weaknessesFixed": [
-      "GC 日志分析 (0/5→5/5)",
-      "创建线程方式 (0/5→5/5)"
-    ]
-  },
-  "weaknesses": {
-    "current": [
-      "GC Roots 类型 (0/5)",
-      "CMS 阶段 (0/5)",
-      "CMS vs G1 (0/5)",
-      "G1 vs CMS 选择 (0/5)",
-      "创建线程方式 (0/5)",
-      "阻塞队列实现方式 (2/5)",
-      "哈希冲突解决 (2/5)",
-      "反射优缺点 (2/5)",
-      "GC 日志分析 (2/5)",
-      "收集器搭配 (2.5/5)",
-      "四种引用类型 (3.5/5)",
-      "HashMap 查找过程 (3/5)",
-      "HashSet 底层 (3/5)",
-      "ArrayList vs LinkedList (3/5)",
-      "队列 vs 栈实现 (3/5)"
-    ],
-    "fixing": [],
-    "fixed": ["对象内存布局 (0/5→5/5)", "堆 vs 栈区别 (3.5/5→4/5)"]
-  },
-  "nextActions": [
-    "JVM Day 3 第 1 次复习（CMS+G1 重点）",
-    "复习创建线程方式（4 种）",
-    "复习反射优缺点",
-    "巩固阻塞队列实现方式"
-  ],
-  "todaySummary": {
-    "date": "2026-03-17",
-    "tasks": [
-      "集合框架未学题目 10 题 ✅ 讲解完成",
-      "集合框架测试 5 题 ✅ 2.9/5",
-      "随机复习 12 题 ✅ 3.4/5"
-    ],
-    "avgScore": "3.2/5",
-    "highlights": [
-      "集合框架未学题目全部讲解完成",
-      "try-catch-finally 返回值 5/5",
-      "final 三兄弟 4.5/5"
-    ],
-    "weaknessesExposed": [
-      "创建线程方式 (0/5) - 完全不会",
-      "反射优缺点 (2/5) - 忘记了",
-      "阻塞队列实现 (2/5) - 概念混淆"
-    ],
-    "systemUpdates": [
-      "更新 MEMORY.md 薄弱项",
-      "更新 .random-review-state.json",
-      "更新集合框架答题记录"
-    ]
-  },
+  
   "systemFiles": {
     "soul": "SOUL.md",
     "user": "USER.md",
     "memory": "MEMORY.md",
     "heartbeat": "HEARTBEAT.md",
     "agents": "AGENTS.md",
+    "contextSnapshot": ".context-snapshot.json",
+    "reviewTracker": ".review-tracker.json",
+    "randomReviewState": ".random-review-state.json",
     "learningWorkflow": "memory/学习与复习流程标准.md",
     "randomReview": "memory/随机复习流程.md",
-    "answerRecords": "memory/java-questions/"
+    "answerRecords": "memory/java-questions/",
+    "sessionRecords": "memory/sessions/",
+    "reviewRecords": "memory/reviews/",
+    "weaknessRecords": "memory/weaknesses/",
+    "randomReviewRecords": "memory/random-review/"
+  },
+  
+  "systemImprovements": {
+    "2026-03-20": {
+      "issue": "上下文快照未及时更新（第二次发生）",
+      "solution": [
+        "SOUL.md 添加'会话结束强制更新'规则",
+        "HEARTBEAT.md 添加'上下文完整性检查'",
+        "用户快捷命令：'更新上下文'/'同步进度'/'刷新快照'"
+      ],
+      "status": "已实施"
+    }
   }
 }
