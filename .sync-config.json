@@ -1,0 +1,36 @@
+{
+  "lastSyncCheck": "2026-03-22T17:00:00+08:00",
+  "lastAutoSync": null,
+  "syncScriptVersion": "1.0.0",
+  "autoSyncEnabled": true,
+  "checkBeforeRandomReview": true,
+  "notifyOnUnsyncedFiles": true,
+  "syncLogRetention": 30,
+  "modules": {
+    "java": {
+      "total": 56,
+      "name": "Java 基础篇"
+    },
+    "coll": {
+      "total": 37,
+      "name": "集合框架篇"
+    },
+    "jvm": {
+      "total": 66,
+      "name": "JVM 篇"
+    }
+  },
+  "rules": {
+    "excludeToday": true,
+    "excludeRecent7Days": false,
+    "prioritizeWeaknesses": true,
+    "balanceModules": true,
+    "defaultQuestionCount": 12
+  },
+  "alerts": {
+    "unsyncedFiles": true,
+    "missingStateFile": true,
+    "lowAvailableQuestions": true,
+    "syncFailure": true
+  }
+}
