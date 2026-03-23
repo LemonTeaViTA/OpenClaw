@@ -1,97 +1,66 @@
 {
-  "lastUpdate": "2026-03-22T21:36:00+08:00",
-  "sessionId": "2026-03-22-JVM-Java-Weakness-Review",
-  "progress": {
-    "javaBase": {
-      "total": 56,
-      "completed": 56,
-      "percentage": "100%",
-      "avgScore": "4.1/5",
-      "status": "Completed"
+    "lastUpdate": "2026-03-23T13:50:00.000Z",
+    "sessionId": "real-20260323-1350",
+    "progress": {
+        "javaBase": {
+            "total": 56,
+            "completed": 56,
+            "percentage": "100%",
+            "avgScore": "4.1/5",
+            "status": "Completed"
+        },
+        "collection": {
+            "total": 37,
+            "completed": 37,
+            "percentage": "100%",
+            "avgScore": "3.5/5",
+            "status": "Completed"
+        },
+        "jvm": {
+            "total": 66,
+            "completed": 66,
+            "percentage": "100%",
+            "avgScore": "3.8/5",
+            "status": "Completed"
+        }
     },
-    "collection": {
-      "total": 37,
-      "completed": 37,
-      "percentage": "100%",
-      "avgScore": "3.5/5",
-      "status": "Completed"
+    "todaySession": {
+        "date": "2026-03-23",
+        "completed": [],
+        "pending": []
     },
-    "jvm": {
-      "total": 66,
-      "completed": 66,
-      "percentage": "100%",
-      "avgScore": "3.8/5",
-      "status": "Completed"
+    "nextReview": {
+        "date": "2026-03-23",
+        "tasks": [
+            "薄弱项复习：阻塞队列实现方式 (2.5/5)",
+            "薄弱项复习：哈希冲突解决 (3.5/5)",
+            "薄弱项复习：HashMap vs HashTable (3.5/5)",
+            "随机复习：10-15 题（Java + 集合+JVM）",
+            "JVM Day 4 性能工具（新内容）"
+        ]
+    },
+    "activeRules": {
+        "scoringStandard": "Strict",
+        "answerTemplate": "Unified Template v1.0",
+        "weaknessThreshold": 3.0,
+        "syncAfterReview": true,
+        "sessionEndSelfCheck": true,
+        "documentLocation": "memory/AI-行为规范.md"
+    },
+    "userPreferences": {
+        "learningMode": "Teach first, then test",
+        "feedbackStyle": "Direct, no fluff",
+        "communicationStyle": "Professional, concise",
+        "scoringPreference": "Strict (accuracy > encouragement)"
+    },
+    "systemFiles": {
+        "soul": "SOUL.md",
+        "user": "USER.md",
+        "memory": "MEMORY.md",
+        "heartbeat": "HEARTBEAT.md",
+        "contextSnapshot": ".context-snapshot.json",
+        "reviewTracker": ".review-tracker.json",
+        "randomReviewState": ".random-review-state.json",
+        "aiBehaviorRules": "memory/AI-行为规范.md"
     }
-  },
-  "todaySession": {
-    "date": "2026-03-22",
-    "completed": [
-      "JVM weakness review (4 topics, 4.6/5)",
-      "Java Basics weakness review (3 topics, 3/5)",
-      "Random review (9/12 questions, 3.4/5)",
-      "Script optimization (3 PowerShell scripts created)",
-      "AI behavior rules established"
-    ],
-    "pending": [
-      "Random review remaining 3 questions",
-      "Git backup push (auth issue needs manual check)",
-      "JVM Day 4 Performance Tools"
-    ]
-  },
-  "nextReview": {
-    "date": "2026-03-23",
-    "tasks": [
-      "Complete random review (3 questions)",
-      "Review weaknesses: ConcurrentHashMap, sleep vs wait, HashMap vs HashTable",
-      "Continue JVM Day 4"
-    ]
-  },
-  "activeRules": {
-    "scoringStandard": "Strict (updated 2026-03-22)",
-    "answerTemplate": "Unified Template v1.0",
-    "weaknessThreshold": 3.0,
-    "syncAfterReview": true,
-    "sessionEndSelfCheck": true,
-    "documentLocation": "memory/AI-行为规范.md"
-  },
-  "qualityChecks": {
-    "lastScoreCheck": "2026-03-22T21:00:00",
-    "violations": [
-      {
-        "time": "2026-03-22T20:55:00",
-        "topic": "ConcurrentHashMap JDK 1.7 vs 1.8",
-        "issue": "Scored too high (gave 4/5, should be 2.5/5)",
-        "fixed": true,
-        "correctedScore": 2.5
-      }
-    ],
-    "correctiveActions": [
-      "Created memory/AI-行为规范.md",
-      "Updated .context-snapshot.json with activeRules",
-      "Recorded violation in memory/dialogs/2026-03-22-session-1.md"
-    ]
-  },
-  "userPreferences": {
-    "learningMode": "Teach first, then test",
-    "feedbackStyle": "Direct, no fluff",
-    "communicationStyle": "Professional, concise",
-    "scoringPreference": "Strict (accuracy > encouragement)"
-  },
-  "systemFiles": {
-    "soul": "SOUL.md",
-    "user": "USER.md",
-    "memory": "MEMORY.md",
-    "heartbeat": "HEARTBEAT.md",
-    "contextSnapshot": ".context-snapshot.json",
-    "reviewTracker": ".review-tracker.json",
-    "randomReviewState": ".random-review-state.json",
-    "aiBehaviorRules": "memory/AI-行为规范.md"
-  },
-  "scripts": {
-    "syncReviewState": "scripts/sync-review-state.ps1",
-    "randomReviewSelector": "scripts/random-review-selector.ps1",
-    "checkSyncStatus": "scripts/check-sync-status.ps1",
-    "documentation": "scripts/README-RANDOM-REVIEW.md"
-  }
 }

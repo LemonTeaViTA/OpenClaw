@@ -32,6 +32,7 @@ $reviewFiles = @()
 $weaknessFiles = @()
 $randomReviewFiles = @()
 $sessionFiles = @()
+$dialogFiles = @()
 
 if (Test-Path (Join-Path $memoryRoot "reviews")) {
     $reviewFiles = Get-ChildItem (Join-Path $memoryRoot "reviews") -Filter "*$today*.md" -ErrorAction SilentlyContinue
@@ -49,7 +50,11 @@ if (Test-Path (Join-Path $memoryRoot "sessions")) {
     $sessionFiles = Get-ChildItem (Join-Path $memoryRoot "sessions") -Filter "*$today*.md" -ErrorAction SilentlyContinue
 }
 
-$totalFiles = $reviewFiles.Count + $weaknessFiles.Count + $randomReviewFiles.Count + $sessionFiles.Count
+if (Test-Path (Join-Path $memoryRoot "dialogs")) {
+    $dialogFiles = Get-ChildItem (Join-Path $memoryRoot "dialogs") -Filter "*$today*.md" -ErrorAction SilentlyContinue
+}
+
+$totalFiles = $reviewFiles.Count + $weaknessFiles.Count + $randomReviewFiles.Count + $sessionFiles.Count + $dialogFiles.Count
 
 Write-Host "  Found $totalFiles review record files" -ForegroundColor Green
 
@@ -69,7 +74,7 @@ Write-Host "`nExtracting question info..." -ForegroundColor Yellow
 $allQuestionIds = @()
 $todayScores = @()
 
-foreach ($file in ($reviewFiles + $weaknessFiles + $randomReviewFiles + $sessionFiles)) {
+foreach ($file in ($reviewFiles + $weaknessFiles + $randomReviewFiles + $sessionFiles + $dialogFiles)) {
     $content = Get-Content $file.FullName -Raw
     
     $matches = [regex]::Matches($content, '\b(java|coll|jvm)-(\d+)\b')

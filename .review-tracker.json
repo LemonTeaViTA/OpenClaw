@@ -1,64 +1,65 @@
 {
-  "lastSession": "2026-03-22-sync",
-  "lastUpdate": "2026-03-22T17:00:00+08:00",
+  "lastSession": "2026-03-23-weakness-review",
+  "lastUpdate": "2026-03-23T13:50:00+08:00",
   "scheduledReviews": [
     {
       "topic": "JVM Day 1 - Memory Areas",
-      "nextReview": "2026-03-22",
+      "nextReview": "2026-03-26",
       "reviewCount": 2,
-      "lastReview": "2026-03-15",
-      "file": "memory/reviews/jvm-day1-review-2026-03-15.md"
+      "lastReview": "2026-03-22",
+      "file": "memory/dialogs/2026-03-22-session-1.md"
     },
     {
       "topic": "JVM Day 2 - GC Basics",
-      "nextReview": "2026-03-26",
-      "reviewCount": 3,
-      "lastReview": "2026-03-19",
-      "file": "memory/reviews/jvm-day2-review-2026-03-19.md"
+      "nextReview": "2026-03-25",
+      "reviewCount": 2,
+      "lastReview": "2026-03-22",
+      "file": "memory/dialogs/2026-03-22-session-1.md"
     },
     {
       "topic": "JVM Day 3 - GC Collectors",
-      "nextReview": "2026-03-27",
-      "reviewCount": 3,
-      "lastReview": "2026-03-20",
-      "file": "memory/reviews/jvm-day3-review-2026-03-20.md"
+      "nextReview": "2026-03-23",
+      "reviewCount": 1,
+      "lastReview": "2026-03-15",
+      "file": "memory/dialogs/2026-03-15-session-3.md"
     }
   ],
   "randomReview": {
-    "lastReview": "2026-03-21",
-    "nextReview": "2026-03-22",
+    "lastReview": "2026-03-23",
+    "nextReview": "2026-03-24",
     "scope": "Java (56) + Collections (37) + JVM (66) = 159 questions",
     "questionCount": "10-15"
   },
   "weaknesses": {
     "JVM": {
-      "Four References": {"score": 4, "lastReview": "2026-03-19", "nextReview": "2026-03-22"},
-      "Collector Pairing": {"score": 3.5, "lastReview": "2026-03-19", "nextReview": "2026-03-21"},
-      "GC Roots": {"score": 5, "lastReview": "2026-03-19", "nextReview": "2026-03-26"}
+      "CAS 原理+ABA": {"score": 2.5, "lastReview": null, "nextReview": "2026-03-23"},
+      "线程安全实现": {"score": 3.5, "lastReview": null, "nextReview": "2026-03-24"},
+      "死锁 4 条件": {"score": 3, "lastReview": null, "nextReview": "2026-03-24"}
     },
     "Collections": {
-      "BlockingQueue": {"score": 2, "lastReview": null, "nextReview": "2026-03-21"},
-      "HashMap Lookup": {"score": 3, "lastReview": null, "nextReview": "2026-03-21"}
+      "阻塞队列实现方式": {"score": 2.5, "lastReview": "2026-03-23", "nextReview": "2026-03-25"},
+      "HashMap 查找过程": {"score": 3.5, "lastReview": "2026-03-23", "nextReview": "2026-03-25"},
+      "哈希冲突解决": {"score": 3.5, "lastReview": "2026-03-23", "nextReview": "2026-03-25"},
+      "HashSet vs ArrayList": {"score": 3.5, "lastReview": null, "nextReview": "2026-03-24"}
     },
     "Java Basics": {
-      "sleep vs wait": {"score": 2.5, "lastReview": "2026-03-21", "nextReview": "2026-03-23"},
-      "HashMap vs HashTable": {"score": 2.5, "lastReview": "2026-03-22", "nextReview": "2026-03-24"}
+      "反射优缺点": {"score": 3, "lastReview": "2026-03-23", "nextReview": "2026-03-25"},
+      "队列 vs 栈实现": {"score": 3.5, "lastReview": "2026-03-23", "nextReview": "2026-03-25"},
+      "String 不可变性好处": {"score": 3.5, "lastReview": null, "nextReview": "2026-03-24"},
+      "== vs equals": {"score": 3.5, "lastReview": null, "nextReview": "2026-03-24"},
+      "final/finally/finalize": {"score": 3.5, "lastReview": null, "nextReview": "2026-03-24"},
+      "String 三兄弟性能": {"score": 3.5, "lastReview": null, "nextReview": "2026-03-24"},
+      "throw vs throws": {"score": 3, "lastReview": null, "nextReview": "2026-03-24"}
     }
   },
   "todayCompleted": {
-    "date": "2026-03-22",
+    "date": "2026-03-23",
     "sessions": [
       {
         "type": "weakness-review",
-        "topic": "JVM Weaknesses",
-        "score": "4.6/5",
-        "file": "memory/weaknesses/2026-03-22-jvm.md"
-      },
-      {
-        "type": "weakness-review",
-        "topic": "Java Basics Weaknesses",
-        "score": "3/5",
-        "file": "memory/weaknesses/2026-03-22-java.md"
+        "topic": "阻塞队列实现方式、哈希冲突解决、ConcurrentHashMap、sleep vs wait、HashMap vs HashTable",
+        "score": "3.5/5",
+        "file": "memory/dialogs/2026-03-23-session-1.md"
       }
     ]
   }

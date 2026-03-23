@@ -61,7 +61,7 @@ if (-not $allFilesExist) {
 # 2. Check today's review records
 Write-Host "`nToday's Review Records:" -ForegroundColor Yellow
 
-$reviewDirs = @("reviews", "weaknesses", "random-review", "sessions")
+$reviewDirs = @("reviews", "weaknesses", "random-review", "sessions", "dialogs")
 $todayFiles = @()
 
 foreach ($dir in $reviewDirs) {
