@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 set -euo pipefail
 
 # Lighthouse MCP Setup — installs mcporter (if needed) and writes config
@@ -8,7 +8,7 @@ set -euo pipefail
 # Examples:
 #   setup.sh --secret-id AKIDxxxx --secret-key yyyyyyy
 #   setup.sh --check-only
-#   setup.sh --secret-id AKIDxxxx --secret-key yyyyyyy --config-path /root/.mcporter/mcporter.json
+#   setup.sh --secret-id AKIDxxxx --secret-key yyyyyyy --config-path C:\Users\11237\.mcporter/mcporter.json
 
 CONFIG_PATH="${HOME}/.mcporter/mcporter.json"
 SECRET_ID=""

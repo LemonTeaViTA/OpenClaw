@@ -1,0 +1,1303 @@
+{
+  "version": "1.0",
+  "lastUpdate": "2026-03-23T20:50:00Z",
+  "totalQuestions": 163,
+  "modules": {
+    "java": {
+      "total": 66,
+      "name": "Java 基础篇"
+    },
+    "coll": {
+      "total": 37,
+      "name": "集合框架篇"
+    },
+    "jvm": {
+      "total": 60,
+      "name": "JVM 篇"
+    }
+  },
+  "questions": {
+    "java-001": {
+      "title": "Java 语⾔有哪些特点？",
+      "module": "java",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "java-002": {
+      "title": "JVM、JDK 和 JRE 有什么区别？",
+      "module": "java",
+      "difficulty": "⭐ 基础",
+      "tags": [
+        "JVM"
+      ],
+      "status": "active"
+    },
+    "java-003": {
+      "title": "说说什么是跨平台？原理是什么",
+      "module": "java",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "java-004": {
+      "title": "什么是字节码？采⽤字节码的好处是什么?",
+      "module": "java",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "java-005": {
+      "title": "为什么有⼈说 Java 是“编译与解释并存”的语⾔？",
+      "module": "java",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "java-006": {
+      "title": "Java ⾯试指南（付费）收录的⽤友⾦融⼀⾯原题：Java 有哪些基本数据类型？",
+      "module": "java",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "java-007": {
+      "title": "Java ⾯试指南（付费）收录的⽤友⾯试原题：说说 8 ⼤数据类型?",
+      "module": "java",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "java-008": {
+      "title": "⾃动类型转换、强制类型转换了解吗？",
+      "module": "java",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "java-009": {
+      "title": "什么是⾃动拆箱/装箱？",
+      "module": "java",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "java-010": {
+      "title": "Java ⾯试指南（付费）收录的⽤友⾯试原题：对应有哪些包装器类？",
+      "module": "java",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "java-011": {
+      "title": "&和&&有什么区别？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-012": {
+      "title": "switch 语句能否⽤在 byte/long/String 类型上？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "String"
+      ],
+      "status": "active"
+    },
+    "java-013": {
+      "title": "break,continue,return 的区别及作⽤？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-014": {
+      "title": "⽤效率最⾼的⽅法计算 2 乘以 8？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-015": {
+      "title": "说说⾃增⾃减运算？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-016": {
+      "title": "float 是怎么表示⼩数的？（补充）",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-017": {
+      "title": "讲⼀下数据准确性⾼是怎么保证的？（补充）",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-018": {
+      "title": "⾯向对象和⾯向过程的区别?",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-019": {
+      "title": "Java ⾯试指南（付费）收录的快⼿同学 2 ⼀⾯⾯试原题：⾯向对象和⾯向过程的区别？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-020": {
+      "title": "多态解决了什么问题？（补充）",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-021": {
+      "title": "Java ⾯试指南（付费）收录的华为⾯经同学 8 技术⼆⾯⾯试原题：多态的⽬的，解决了什么问题？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-022": {
+      "title": "重载和重写的区别？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-023": {
+      "title": "访问修饰符 public、private、protected、以及默认时的区别？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-024": {
+      "title": "this 关键字有什么作⽤？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-025": {
+      "title": "Java ⾯试指南（付费）收录的⽤友⾯试原题：抽象类和接⼝的区别？抽象类可以定义构造⽅法吗？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-026": {
+      "title": "成员变量与局部变量的区别有哪些？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-027": {
+      "title": "static 关键字了解吗？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-028": {
+      "title": "final 关键字有什么作⽤？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-029": {
+      "title": "final、finally、finalize 的区别？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-030": {
+      "title": "==和 equals 的区别？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-031": {
+      "title": "Java ⾯试指南（付费）收录的⼩公司⾯经合集同学 1 Java 后端⾯试原题：==和 equals()有什么区别？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-032": {
+      "title": "Java ⾯试指南（付费）收录的快⼿同学 2 ⼀⾯⾯试原题：HashCode和equals⽅法关系？两个对象的",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "HashMap"
+      ],
+      "status": "active"
+    },
+    "java-033": {
+      "title": "Java 是值传递，还是引⽤传递？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-034": {
+      "title": "说说深拷⻉和浅拷⻉的区别?",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-035": {
+      "title": "Java 创建对象有哪⼏种⽅式？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "java-036": {
+      "title": "String 是 Java 基本数据类型吗？可以被继承吗？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "String"
+      ],
+      "status": "active"
+    },
+    "java-037": {
+      "title": "Java ⾯试指南（付费）收录的⽤友⾦融⼀⾯原题：String StringBuffer StringBuilder 有什么区别？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "String"
+      ],
+      "status": "active"
+    },
+    "java-038": {
+      "title": "String str1 = new String(\"abc\") 和 String str2 = \"abc\" 的区别？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "String"
+      ],
+      "status": "active"
+    },
+    "java-039": {
+      "title": "推荐阅读：为什么 Java 字符串 String 是不可变的？",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "String"
+      ],
+      "status": "active"
+    },
+    "java-040": {
+      "title": "Java ⾯试指南（付费）收录的美团同学 2 优选物流调度技术 2 ⾯⾯试原题：String 不可变吗？为什么不",
+      "module": "java",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "String"
+      ],
+      "status": "active"
+    },
+    "java-041": {
+      "title": "intern ⽅法有什么作⽤？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "java-042": {
+      "title": "String 怎么转成 Integer 的？原理？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "String"
+      ],
+      "status": "active"
+    },
+    "java-043": {
+      "title": "Object 类的常⻅⽅法？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "java-044": {
+      "title": "Java ⾯试指南（付费）收录的⽤友⾦融⼀⾯原题：Object 有哪些常⽤的⽅法？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "java-045": {
+      "title": "Java ⾯试指南（付费）收录的字节跳动⾯经同学 1 Java 后端技术⼀⾯⾯试原题：异常有哪些分类？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "异常处理"
+      ],
+      "status": "active"
+    },
+    "java-046": {
+      "title": "Java ⾯试指南（付费）收录的微众银⾏同学 1 Java 后端⼀⾯的原题：对异常体系了解多少？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "异常处理"
+      ],
+      "status": "active"
+    },
+    "java-047": {
+      "title": "异常的处理⽅式？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "异常处理"
+      ],
+      "status": "active"
+    },
+    "java-048": {
+      "title": "Java ⾯试指南（付费）收录的京东⾯经同学 8 ⾯试原题：写程序中如何处理异常？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "异常处理"
+      ],
+      "status": "active"
+    },
+    "java-049": {
+      "title": "Java 中 IO 流分为⼏种?",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "java-050": {
+      "title": "Java ⾯试指南（付费）收录的美团⾯经同学 2 Java 后端技术⼀⾯⾯试原题：Java IO 流 如何划分？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "java-051": {
+      "title": "既然有了字节流,为什么还要有字符流?",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "java-052": {
+      "title": "Java ⾯试指南（付费）收录的国企⾯试原题：⽂本存储是字节流还是字符流，视频⽂件呢？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "java-053": {
+      "title": "Java ⾯试指南（付费）收录的美团⾯经同学 2 Java 后端技术⼀⾯⾯试原题：BIO、NIO、AIO 的区别？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "java-054": {
+      "title": "什么是序列化？什么是反序列化？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "java-055": {
+      "title": "Java ⾯试指南（付费）收录的京东⾯经同学 2 后端⾯试原题：⽤过序列化和反序列化吗？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "java-056": {
+      "title": "说说有⼏种序列化⽅式？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "java-057": {
+      "title": "了解过Socket⽹络套接字吗？（补充）",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "java-058": {
+      "title": "Java ⾯试指南（付费）收录的理想汽⻋⾯经同学 2 ⼀⾯⾯试原题：线程内有哪些通信⽅式？线程之间有",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "并发"
+      ],
+      "status": "active"
+    },
+    "java-059": {
+      "title": "Java 泛型了解么？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "泛型"
+      ],
+      "status": "active"
+    },
+    "java-060": {
+      "title": "说⼀下你对注解的理解？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "java-061": {
+      "title": "Java ⾯试指南（付费）收录的美团⾯经同学 2 Java 后端技术⼀⾯⾯试原题：Java 反射⽤过吗？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "反射"
+      ],
+      "status": "active"
+    },
+    "java-062": {
+      "title": "JDK 1.8 都有哪些新特性？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "java-063": {
+      "title": "Java ⾯试指南（付费）收录的招商银⾏⾯经同学 6 招银⽹络科技⾯试原题：JDK1.8 的特性？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "java-064": {
+      "title": "Lambda 表达式了解多少？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "java-065": {
+      "title": "Optional 了解吗？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "java-066": {
+      "title": "Stream 流⽤过吗？",
+      "module": "java",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "coll-001": {
+      "title": "Java ⾯试指南（付费）收录的⽤友⾦融⼀⾯原题：你了解哪些集合框架？",
+      "module": "coll",
+      "difficulty": "⭐ 基础",
+      "tags": [
+        "集合"
+      ],
+      "status": "active"
+    },
+    "coll-002": {
+      "title": "Java ⾯试指南（付费）收录的⼩⽶暑期实习同学 E ⼀⾯⾯试原题：你了解哪些集合？",
+      "module": "coll",
+      "difficulty": "⭐ 基础",
+      "tags": [
+        "集合"
+      ],
+      "status": "active"
+    },
+    "coll-003": {
+      "title": "Java ⾯试指南（付费）收录的华为 OD ⾯经同学 1 ⼀⾯⾯试原题：队列和栈的区别了解吗?",
+      "module": "coll",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "coll-004": {
+      "title": "Java ⾯试指南（付费）收录的⼩公司⾯经合集同学 1 Java 后端⾯试原题：Java 容器有哪些？List、Set",
+      "module": "coll",
+      "difficulty": "⭐ 基础",
+      "tags": [
+        "集合"
+      ],
+      "status": "active"
+    },
+    "coll-005": {
+      "title": "Java ⾯试指南（付费）收录的⽤友⾯试原题：集合容器能列举⼏个吗?",
+      "module": "coll",
+      "difficulty": "⭐ 基础",
+      "tags": [
+        "集合"
+      ],
+      "status": "active"
+    },
+    "coll-006": {
+      "title": "Java ⾯试指南（付费）收录的⼩⽶暑期实习同学 E ⼀⾯⾯试原题：你了解哪些集合？",
+      "module": "coll",
+      "difficulty": "⭐ 基础",
+      "tags": [
+        "集合"
+      ],
+      "status": "active"
+    },
+    "coll-007": {
+      "title": "ArrayList 的扩容机制了解吗？",
+      "module": "coll",
+      "difficulty": "⭐ 基础",
+      "tags": [
+        "集合"
+      ],
+      "status": "active"
+    },
+    "coll-008": {
+      "title": "ArrayList 怎么序列化的知道吗？",
+      "module": "coll",
+      "difficulty": "⭐ 基础",
+      "tags": [
+        "集合"
+      ],
+      "status": "active"
+    },
+    "coll-009": {
+      "title": "快速失败fail-fast了解吗？",
+      "module": "coll",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "coll-010": {
+      "title": "有哪⼏种实现 ArrayList 线程安全的⽅法？",
+      "module": "coll",
+      "difficulty": "⭐ 基础",
+      "tags": [
+        "并发",
+        "集合"
+      ],
+      "status": "active"
+    },
+    "coll-011": {
+      "title": "CopyOnWriteArrayList 了解多少？",
+      "module": "coll",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "集合"
+      ],
+      "status": "active"
+    },
+    "coll-012": {
+      "title": "Java ⾯试指南（付费）收录的快⼿⾯经同学 1 部⻔主站技术部⾯试原题：HashMap 的结构？",
+      "module": "coll",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "HashMap"
+      ],
+      "status": "active"
+    },
+    "coll-013": {
+      "title": "Java ⾯试指南（付费）收录的腾讯⾯经同学 27 云后台技术⼀⾯⾯试原题：Hashmap的底层？为什么链",
+      "module": "coll",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "HashMap"
+      ],
+      "status": "active"
+    },
+    "coll-014": {
+      "title": "你对红⿊树了解多少？",
+      "module": "coll",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "coll-015": {
+      "title": "红⿊树怎么保持平衡的？",
+      "module": "coll",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "coll-016": {
+      "title": "HashMap 怎么查找元素的呢？",
+      "module": "coll",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "HashMap"
+      ],
+      "status": "active"
+    },
+    "coll-017": {
+      "title": "HashMap 的 hash 函数是怎么设计的?",
+      "module": "coll",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "HashMap"
+      ],
+      "status": "active"
+    },
+    "coll-018": {
+      "title": "为什么 hash 函数能减少哈希冲突？",
+      "module": "coll",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "HashMap"
+      ],
+      "status": "active"
+    },
+    "coll-019": {
+      "title": "Java ⾯试指南（付费）收录的⽀付宝⾯经同学 2 春招技术⼀⾯⾯试原题：为什么要⽤⾼低做异或运算？",
+      "module": "coll",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "coll-020": {
+      "title": "为什么 HashMap 的容量是 2 的幂次⽅？",
+      "module": "coll",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "HashMap"
+      ],
+      "status": "active"
+    },
+    "coll-021": {
+      "title": "如果初始化 HashMap，传⼀个 17 的容量，它会怎么处理？",
+      "module": "coll",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "HashMap"
+      ],
+      "status": "active"
+    },
+    "coll-022": {
+      "title": "你还知道哪些哈希函数的构造⽅法呢？",
+      "module": "coll",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "coll-023": {
+      "title": "解决哈希冲突有哪些⽅法？",
+      "module": "coll",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "coll-024": {
+      "title": "Java ⾯试指南（付费）收录的⽀付宝⾯经同学 2 春招技术⼀⾯⾯试原题：HashMap 怎么解决冲突？怎",
+      "module": "coll",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "HashMap"
+      ],
+      "status": "active"
+    },
+    "coll-025": {
+      "title": "为什么 HashMap 链表转红⿊树的阈值为 8 呢？",
+      "module": "coll",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "HashMap"
+      ],
+      "status": "active"
+    },
+    "coll-026": {
+      "title": "HashMap扩容发⽣在什么时候呢？",
+      "module": "coll",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "HashMap"
+      ],
+      "status": "active"
+    },
+    "coll-027": {
+      "title": "JDK 8 对 HashMap 做了哪些优化呢？",
+      "module": "coll",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "HashMap"
+      ],
+      "status": "active"
+    },
+    "coll-028": {
+      "title": "你能⾃⼰设计实现⼀个 HashMap 吗？",
+      "module": "coll",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "HashMap"
+      ],
+      "status": "active"
+    },
+    "coll-029": {
+      "title": "Java ⾯试指南（付费）收录的华为⾯经同学 8 技术⼆⾯⾯试原题：HashMap 是线程安全的吗？",
+      "module": "coll",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "HashMap",
+        "并发"
+      ],
+      "status": "active"
+    },
+    "coll-030": {
+      "title": "Java ⾯试指南（付费）收录的 OPPO ⾯经同学 1 ⾯试原题：为什么HashMap不是线程安全的？",
+      "module": "coll",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "HashMap",
+        "并发"
+      ],
+      "status": "active"
+    },
+    "coll-031": {
+      "title": "Java ⾯试指南（付费）收录的华为⾯经同学 8 技术⼆⾯⾯试原题：Java 中的线程安全的集合是什么？",
+      "module": "coll",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "并发",
+        "集合"
+      ],
+      "status": "active"
+    },
+    "coll-032": {
+      "title": "Java ⾯试指南（付费）收录的腾讯云智⾯经同学 16 ⼀⾯⾯试原题：知道哪些线程安全的集合类型？",
+      "module": "coll",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "并发",
+        "集合"
+      ],
+      "status": "active"
+    },
+    "coll-033": {
+      "title": "Java ⾯试指南（付费）收录的腾讯⾯经同学 27 云后台技术⼀⾯⾯试原题：HashTable了解吗？",
+      "module": "coll",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "HashMap"
+      ],
+      "status": "active"
+    },
+    "coll-034": {
+      "title": "HashMap 内部节点是有序的吗？",
+      "module": "coll",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "HashMap"
+      ],
+      "status": "active"
+    },
+    "coll-035": {
+      "title": "讲讲 LinkedHashMap 怎么实现有序的？",
+      "module": "coll",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "HashMap"
+      ],
+      "status": "active"
+    },
+    "coll-036": {
+      "title": "讲讲 TreeMap 怎么实现有序的？",
+      "module": "coll",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "coll-037": {
+      "title": "讲讲 HashSet 的底层实现？",
+      "module": "coll",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "HashMap",
+        "集合"
+      ],
+      "status": "active"
+    },
+    "jvm-001": {
+      "title": "什么是 JVM?",
+      "module": "jvm",
+      "difficulty": "⭐ 基础",
+      "tags": [
+        "JVM"
+      ],
+      "status": "active"
+    },
+    "jvm-002": {
+      "title": "Java ⾯试指南（付费）收录的字节跳动同学 20 测开⼀⾯的原题：了解过 JVM 么？讲⼀下 JVM 的特性",
+      "module": "jvm",
+      "difficulty": "⭐ 基础",
+      "tags": [
+        "JVM"
+      ],
+      "status": "active"
+    },
+    "jvm-003": {
+      "title": "Java ⾯试指南（付费）收录的美团⾯经同学 2 Java 后端技术⼀⾯⾯试原题：JVM 内存结构了解吗？",
+      "module": "jvm",
+      "difficulty": "⭐ 基础",
+      "tags": [
+        "JVM"
+      ],
+      "status": "active"
+    },
+    "jvm-004": {
+      "title": "Java ⾯试指南（付费）收录的腾讯⾯经同学 29 Java 后端⼀⾯原题：new⼀个对象存放在哪⾥？（运⾏",
+      "module": "jvm",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-005": {
+      "title": "说⼀下 JDK 1.6、1.7、1.8 内存区域的变化？",
+      "module": "jvm",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-006": {
+      "title": "为什么使⽤元空间替代永久代？",
+      "module": "jvm",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-007": {
+      "title": "Java ⾯试指南（付费）收录的美团⾯经同学 2 Java 后端技术⼀⾯⾯试原题：说说创建对象的流程？",
+      "module": "jvm",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-008": {
+      "title": "堆内存是如何分配的？",
+      "module": "jvm",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-009": {
+      "title": "new 对象时，堆会发⽣抢占吗？",
+      "module": "jvm",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-010": {
+      "title": "能说⼀下对象的内存布局吗？",
+      "module": "jvm",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-011": {
+      "title": "JVM 怎么访问对象的？",
+      "module": "jvm",
+      "difficulty": "⭐ 基础",
+      "tags": [
+        "JVM"
+      ],
+      "status": "active"
+    },
+    "jvm-012": {
+      "title": "说⼀下对象有哪⼏种引⽤？",
+      "module": "jvm",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-013": {
+      "title": "Java 堆的内存分区了解吗？",
+      "module": "jvm",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-014": {
+      "title": "说⼀下新⽣代的区域划分？",
+      "module": "jvm",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-015": {
+      "title": "STW 了解吗？",
+      "module": "jvm",
+      "difficulty": "⭐ 基础",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-016": {
+      "title": "对象⼀定分配在堆中吗？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-017": {
+      "title": "内存溢出和内存泄漏了解吗？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-018": {
+      "title": "能⼿写内存溢出的例⼦吗？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-019": {
+      "title": "内存泄漏可能由哪些原因导致呢？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-020": {
+      "title": "有没有处理过内存泄漏问题？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-021": {
+      "title": "有没有处理过内存溢出问题？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-022": {
+      "title": "Java ⾯试指南（付费）收录的华为⾯经同学 9 Java 通⽤软件开发⼀⾯⾯试原题：如何排查 OOM？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-023": {
+      "title": "什么情况下会发⽣栈溢出？（补充）",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-024": {
+      "title": "Java ⾯试指南（付费）收录的 OPPO ⾯经同学 1 ⾯试原题：什么情况下会发⽣栈溢出？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-025": {
+      "title": "Java ⾯试指南（付费）收录的美团⾯经同学 2 Java 后端技术⼀⾯⾯试原题：了解 GC 吗？不可达判断知",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "GC"
+      ],
+      "status": "active"
+    },
+    "jvm-026": {
+      "title": "Java ⾯试指南（付费）收录的 OPPO ⾯经同学 1 ⾯试原题：垃圾回收的过程是什么？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "GC"
+      ],
+      "status": "active"
+    },
+    "jvm-027": {
+      "title": "Java ⾯试指南（付费）收录的荣耀⾯经同学 4 ⾯试原题：对垃圾回收的理解？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "GC"
+      ],
+      "status": "active"
+    },
+    "jvm-028": {
+      "title": "Java ⾯试指南（付费）收录的腾讯⾯经同学 29 Java 后端⼀⾯原题：JVM垃圾回收机制？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "GC",
+        "JVM"
+      ],
+      "status": "active"
+    },
+    "jvm-029": {
+      "title": "Java 中可作为 GC Roots 的引⽤有哪⼏种？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "GC"
+      ],
+      "status": "active"
+    },
+    "jvm-030": {
+      "title": "Java ⾯试指南（付费）收录的腾讯⾯经同学 27 云后台技术⼀⾯⾯试原题：GC Root？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "GC"
+      ],
+      "status": "active"
+    },
+    "jvm-031": {
+      "title": "finalize()⽅法了解吗？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-032": {
+      "title": "Java ⾯试指南（付费）收录的腾讯⾯经同学 27 云后台技术⼀⾯⾯试原题：回收的⽅法？分代收集算法",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "GC"
+      ],
+      "status": "active"
+    },
+    "jvm-033": {
+      "title": "Java ⾯试指南（付费）收录的百度同学 4 ⾯试原题：Gc 算法有哪些?",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "GC"
+      ],
+      "status": "active"
+    },
+    "jvm-034": {
+      "title": "Minor GC、Major GC、Mixed GC、Full GC 都是什么意思？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "GC"
+      ],
+      "status": "active"
+    },
+    "jvm-035": {
+      "title": "Young GC 什么时候触发？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "GC"
+      ],
+      "status": "active"
+    },
+    "jvm-036": {
+      "title": "什么时候会触发 Full GC？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "GC"
+      ],
+      "status": "active"
+    },
+    "jvm-037": {
+      "title": "Java ⾯试指南（付费）收录的快⼿同学 4 ⼀⾯原题：如何判断死亡对象？GC Roots有哪些？空间分配",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "GC"
+      ],
+      "status": "active"
+    },
+    "jvm-038": {
+      "title": "有了 CMS，为什么还要引⼊ G1？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-039": {
+      "title": "你们线上⽤的什么垃圾收集器？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "GC"
+      ],
+      "status": "active"
+    },
+    "jvm-040": {
+      "title": "垃圾收集器应该如何选择？",
+      "module": "jvm",
+      "difficulty": "⭐⭐ 进阶",
+      "tags": [
+        "GC"
+      ],
+      "status": "active"
+    },
+    "jvm-041": {
+      "title": "⽤过哪些性能监控的命令⾏⼯具？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-042": {
+      "title": "了解哪些可视化的性能监控⼯具？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-043": {
+      "title": "JVM 的常⻅参数配置知道哪些？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "JVM"
+      ],
+      "status": "active"
+    },
+    "jvm-044": {
+      "title": "做过 JVM 调优吗？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "JVM"
+      ],
+      "status": "active"
+    },
+    "jvm-045": {
+      "title": "CPU 占⽤过⾼怎么排查？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-046": {
+      "title": "内存飙⾼问题怎么排查？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-047": {
+      "title": "频繁 minor gc 怎么办？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "GC"
+      ],
+      "status": "active"
+    },
+    "jvm-048": {
+      "title": "频繁 Full GC 怎么办？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [
+        "GC"
+      ],
+      "status": "active"
+    },
+    "jvm-049": {
+      "title": "Java ⾯试指南（付费）收录的⼩⽶暑期实习同学 E ⼀⾯⾯试原题：你了解类的加载机制吗？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-050": {
+      "title": "类加载器有哪些？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-051": {
+      "title": "能说⼀下类的⽣命周期吗？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-052": {
+      "title": "Java ⾯试指南（付费）收录的⼩⽶暑期实习同学 E ⼀⾯⾯试原题：你了解类的加载机制吗？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-053": {
+      "title": "Java ⾯试指南（付费）收录的快⼿同学 4 ⼀⾯原题：类装载的执⾏过程？双亲委派模式是什么？为什么",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-054": {
+      "title": "Java ⾯试指南（付费）收录的⼩⽶暑期实习同学 E ⼀⾯⾯试原题：你了解类的加载机制吗？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-055": {
+      "title": "为什么要⽤双亲委派模型？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-056": {
+      "title": "如何破坏双亲委派机制？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-057": {
+      "title": "有哪些破坏双亲委派模型的典型例⼦？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-058": {
+      "title": "Tomcat 的类加载机制了解吗？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-059": {
+      "title": "你觉得应该怎么实现⼀个热部署功能？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    },
+    "jvm-060": {
+      "title": "Java ⾯试指南（付费）收录的⼩⽶暑期实习同学 E ⼀⾯⾯试原题：那你知道类的热更新的？",
+      "module": "jvm",
+      "difficulty": "⭐⭐⭐ 提高",
+      "tags": [],
+      "status": "active"
+    }
+  }
+}

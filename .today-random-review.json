@@ -1,0 +1,23 @@
+﻿{
+    "date":  "2026-03-23",
+    "questionCount":  12,
+    "questionIds":  [
+                        "java-052",
+                        "java-021",
+                        "java-030",
+                        "java-015",
+                        "coll-019",
+                        "coll-002",
+                        "coll-006",
+                        "coll-010",
+                        "jvm-059",
+                        "jvm-001",
+                        "jvm-048",
+                        "jvm-031"
+                    ],
+    "modules":  {
+                    "java":  4,
+                    "coll":  4,
+                    "jvm":  4
+                }
+}

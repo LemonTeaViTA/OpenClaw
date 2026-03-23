@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 剩余 PDF 批量 OCR 识别
 处理 MySQL、Redis、Spring 三个 PDF
@@ -12,12 +12,12 @@ from datetime import datetime
 
 # 配置
 PDF_DIRS = {
-    'mysql': Path("/root/.openclaw/workspace/files/mysql-notes"),
-    'redis': Path("/root/.openclaw/workspace/files/redis-notes"),
-    'spring': Path("/root/.openclaw/workspace/files/spring-notes"),
+    'mysql': Path("C:\Users\11237\.openclaw-autoclaw\workspace/files/mysql-notes"),
+    'redis': Path("C:\Users\11237\.openclaw-autoclaw\workspace/files/redis-notes"),
+    'spring': Path("C:\Users\11237\.openclaw-autoclaw\workspace/files/spring-notes"),
 }
 
-OUTPUT_BASE = Path("/root/.openclaw/workspace/memory/other-subjects-ocr")
+OUTPUT_BASE = Path("C:\Users\11237\.openclaw-autoclaw\workspace/memory/other-subjects-ocr")
 
 # 创建输出目录
 OUTPUT_BASE.mkdir(parents=True, exist_ok=True)

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 正式 OCR 识别 - 测试中文语言包效果
 """
@@ -9,7 +9,7 @@ from pathlib import Path
 import os
 
 # 切换到 PDF 目录
-os.chdir('/root/.openclaw/workspace/files/paismart-interview')
+os.chdir('C:\Users\11237\.openclaw-autoclaw\workspace/files/paismart-interview')
 
 # 获取第一个 PDF 文件名
 pdf_files = [f for f in os.listdir('.') if f.endswith('.pdf')]

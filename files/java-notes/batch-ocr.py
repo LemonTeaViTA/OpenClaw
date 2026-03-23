@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 Java 基础篇 PDF 批量 OCR 识别
 对照已有知识点清单，找出遗漏
@@ -10,8 +10,8 @@ from pathlib import Path
 import os
 from datetime import datetime
 
-PDF_DIR = Path("/root/.openclaw/workspace/files/java-notes")
-OUTPUT_DIR = Path("/root/.openclaw/workspace/memory/java-ocr")
+PDF_DIR = Path("C:\Users\11237\.openclaw-autoclaw\workspace/files/java-notes")
+OUTPUT_DIR = Path("C:\Users\11237\.openclaw-autoclaw\workspace/memory/java-ocr")
 
 # 创建输出目录
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -206,7 +206,7 @@ def main():
 ## 🔍 对比分析
 
 ### 已有知识点清单
-- 文件：`/root/.openclaw/workspace/files/java-notes/01-Java 基础 - 知识点清单.md`
+- 文件：`C:\Users\11237\.openclaw-autoclaw\workspace/files/java-notes/01-Java 基础 - 知识点清单.md`
 - 创建方式：手动整理
 - 可能遗漏：是
 

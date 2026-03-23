@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 派聪明项目 PDF 批量解析脚本
 将所有 PDF 转换为 Markdown 格式，方便 AI 检索和学习
@@ -9,8 +9,8 @@ import os
 from pathlib import Path
 from datetime import datetime
 
-PDF_DIR = Path("/root/.openclaw/workspace/files/paismart-interview")
-OUTPUT_DIR = Path("/root/.openclaw/workspace/memory/paismart-interview")
+PDF_DIR = Path("C:\Users\11237\.openclaw-autoclaw\workspace/files/paismart-interview")
+OUTPUT_DIR = Path("C:\Users\11237\.openclaw-autoclaw\workspace/memory/paismart-interview")
 
 # 创建输出目录
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

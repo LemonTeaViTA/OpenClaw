@@ -1,0 +1,122 @@
+﻿{
+    "lastReviewDate":  "2026-03-23",
+    "todayDate":  "2026-03-23",
+    "todayQuestionIds":  [
+                             "jvm-017",
+                             "jvm-018",
+                             "jvm-019",
+                             "jvm-020",
+                             "jvm-021",
+                             "jvm-022",
+                             "jvm-023",
+                             "jvm-016",
+                             "jvm-038",
+                             "jvm-039",
+                             "jvm-040",
+                             "jvm-041",
+                             "jvm-042",
+                             "jvm-043",
+                             "jvm-044",
+                             "jvm-037",
+                             "java-052",
+                             "java-021",
+                             "coll-019",
+                             "coll-002"
+                         ],
+    "excludeIds":  [
+                       "coll-025",
+                       "java-054",
+                       "java-055",
+                       "jvm-003",
+                       "jvm-010",
+                       "jvm-016",
+                       "jvm-017",
+                       "jvm-018",
+                       "jvm-019",
+                       "jvm-020",
+                       "jvm-021",
+                       "jvm-022",
+                       "jvm-023",
+                       "jvm-037",
+                       "jvm-038",
+                       "jvm-039",
+                       "jvm-040",
+                       "jvm-041",
+                       "jvm-042",
+                       "jvm-043",
+                       "jvm-044",
+                       "java-052",
+                       "java-021",
+                       "coll-019",
+                       "coll-002"
+                   ],
+    "completedRounds":  4,
+    "round1Progress":  {
+                           "total":  159,
+                           "completed":  25,
+                           "remaining":  134,
+                           "completedIds":  [
+                                                "coll-025",
+                                                "java-054",
+                                                "java-055",
+                                                "jvm-003",
+                                                "jvm-010",
+                                                "jvm-016",
+                                                "jvm-017",
+                                                "jvm-018",
+                                                "jvm-019",
+                                                "jvm-020",
+                                                "jvm-021",
+                                                "jvm-022",
+                                                "jvm-023",
+                                                "jvm-037",
+                                                "jvm-038",
+                                                "jvm-039",
+                                                "jvm-040",
+                                                "jvm-041",
+                                                "jvm-042",
+                                                "jvm-043",
+                                                "jvm-044",
+                                                "java-052",
+                                                "java-021",
+                                                "coll-019",
+                                                "coll-002"
+                                            ]
+                       },
+    "weaknesses":  [
+                       {
+                           "id":  "coll-025",
+                           "score":  2.5,
+                           "topic":  "ConcurrentHashMap",
+                           "lastScore":  4.0,
+                           "progress":  "已修复"
+                       },
+                       {
+                           "id":  "java-054",
+                           "score":  2.5,
+                           "topic":  "sleep vs wait",
+                           "lastScore":  4.0,
+                           "progress":  "已修复"
+                       },
+                       {
+                           "id":  "java-055",
+                           "score":  2.5,
+                           "topic":  "HashMap vs HashTable",
+                           "lastScore":  3.5,
+                           "progress":  "待加强"
+                       }
+                   ],
+    "todaySummary":  {
+                         "date":  "2026-03-23",
+                         "questionCount":  25,
+                         "score":  "4.2/5",
+                         "scoringStandard":  "Strict"
+                     },
+    "nextReviewDate":  "2026-03-24",
+    "rules":  {
+                  "excludeToday":  true,
+                  "excludeRound1Completed":  false,
+                  "prioritizeWeaknesses":  true,
+                  "questionCount":  "10-15"
+              }
+}

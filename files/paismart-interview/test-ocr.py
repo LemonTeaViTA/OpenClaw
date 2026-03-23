@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """
 测试 OCR 识别效果
 将 PDF 第 1 页转为图片，然后用 Tesseract 识别
@@ -9,7 +9,7 @@ import subprocess
 import os
 from pathlib import Path
 
-PDF_DIR = Path("/root/.openclaw/workspace/files/paismart-interview")
+PDF_DIR = Path("C:\Users\11237\.openclaw-autoclaw\workspace/files/paismart-interview")
 TEST_PDF = PDF_DIR / "派聪明 rag 项目是什么.pdf"
 OUTPUT_IMG = PDF_DIR / "test_page.png"
 OUTPUT_TXT = PDF_DIR / "test_page.txt"
