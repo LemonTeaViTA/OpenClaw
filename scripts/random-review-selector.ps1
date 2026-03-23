@@ -32,7 +32,7 @@ Write-Host "`nChecking sync status..." -ForegroundColor Yellow
 $unsyncedFiles = @()
 $syncLogDir = Join-Path $memoryRoot "sync-logs"
 
-$reviewDirs = @("reviews", "weaknesses", "random-review", "sessions", "dialogs")
+$reviewDirs = @("dialogs")
 foreach ($dir in $reviewDirs) {
     $dirPath = Join-Path $memoryRoot $dir
     if (Test-Path $dirPath) {

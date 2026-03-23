@@ -12,8 +12,12 @@
   - 如果分数/日期不一致 → 标记为"需人工核对"
 - [ ] **🔄 检查同步状态**（新增 - 2026-03-23）：
   - 运行 `.\scripts\check-sync-status.ps1` 检查是否有未同步的复习记录
-  - 如果发现未同步 → 自动运行 `.\scripts\sync-review-state-simple.ps1`
+  - **如果未同步文件数 > 0 且最后同步时间 > 2 小时前** → 自动运行 `.\scripts\sync-review-state-simple.ps1`
   - 如果同步失败 → 立即通知用户"⚠️ 同步失败，请手动运行 sync-review-state-simple.ps1"
+- [ ] **📅 检查艾宾浩斯复习点**（新增 - 2026-03-23）：
+  - 读取 `.review-tracker.json` 的 `scheduledReviews`
+  - 如果有 `nextReview ≤ 今天` 的复习点 → 提醒用户优先复习
+  - 如果复习点已过期 > 3 天 → 标记为"需重新安排"
 
 ### 📚 学习环节（优先复习）
 - [ ] **检查早报待发送**：如果 `C:\Users\11237\.openclaw-autoclaw\workspace/.pending-daily-plan.md` 存在，读取并发送给用户，然后删除文件

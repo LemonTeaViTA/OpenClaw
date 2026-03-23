@@ -11,7 +11,7 @@ Write-Host "Syncing review state (simple version)..." -ForegroundColor Cyan
 
 $today = Get-Date -Format "yyyy-MM-dd"
 
-# Scan dialogs directory
+# Scan dialogs directory ONLY (unified entry point)
 Write-Host "`nScanning memory/dialogs/..." -ForegroundColor Yellow
 $dialogPath = Join-Path $memoryRoot "dialogs"
 $dialogFiles = Get-ChildItem $dialogPath -Filter "*$today*.md" -ErrorAction SilentlyContinue

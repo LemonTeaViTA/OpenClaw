@@ -58,10 +58,10 @@ if (-not $allFilesExist) {
     Write-Host "`nWARNING: Some state files are missing" -ForegroundColor Yellow
 }
 
-# 2. Check today's review records
-Write-Host "`nToday's Review Records:" -ForegroundColor Yellow
+# 2. Check today's review records (dialogs only)
+Write-Host "`nToday's Review Records (dialogs/ only):" -ForegroundColor Yellow
 
-$reviewDirs = @("reviews", "weaknesses", "random-review", "sessions", "dialogs")
+$reviewDirs = @("dialogs")
 $todayFiles = @()
 
 foreach ($dir in $reviewDirs) {
