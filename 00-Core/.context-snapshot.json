@@ -1,52 +1,72 @@
 {
-  "lastUpdate": "2026-03-23T15:58:06.000Z",
-  "sessionId": "review-2026-03-23-2358",
+  "lastUpdate": "2026-03-24T12:30:00.000Z",
+  "sessionId": "review-2026-03-24-integration",
   "progress": {
     "javaBase": {
-      "total": 56,
-      "completed": 56,
+      "total": 52,
+      "completed": 52,
       "percentage": "100%",
       "avgScore": "4.1/5",
       "status": "Completed"
     },
     "collection": {
-      "total": 37,
-      "completed": 37,
+      "total": 15,
+      "completed": 15,
       "percentage": "100%",
-      "avgScore": "3.5/5",
+      "avgScore": "4.2/5",
       "status": "Completed"
     },
     "jvm": {
-      "total": 66,
-      "completed": 66,
+      "total": 35,
+      "completed": 35,
       "percentage": "100%",
       "avgScore": "3.9/5",
       "status": "Completed"
     }
   },
   "todaySession": {
-    "date": "2026-03-23",
+    "date": "2026-03-24",
     "completed": [
-      "薄弱项复习（5 题，3.5/5）",
-      "JVM Day 3 复习（8 题，4.3/5）🎉",
-      "JVM Day 4 学习（8 题，3.9/5）✅",
-      "随机复习（4 题，3.75/5）⏸️",
-      "随机复习（5 题，2.3/5）🔴"
+      "薄弱项复习（4 题，4.1/5）✅",
+      "JVM Day 3 第 3 次复习（7 题，4.9/5）🎉",
+      "题库整合完成（153 题→102 题）✅"
     ],
     "pending": [
-      "随机复习题 5（ArrayList 扩容）",
-      "Git 备份（22:00）",
-      "补完 coll-006（ArrayList 扩容）",
-      "补完 java-061（反射优缺点）"
+      "随机复习（10-15 题）",
+      "Git 备份（22:00）"
     ]
   },
   "nextReview": {
-    "date": "2026-03-24",
+    "date": "2026-03-25",
     "tasks": [
-      "Stream 流专项学习（1/5，完全不会）",
-      "分代收集算法复习（1.5/5，核心原理）",
-      "String 三兄弟性能排序纠正（3/5，说反了）"
+      "阻塞队列专项复习（2/5，混淆概念）",
+      "JVM 调优参数学习（2.6/5，待攻克）",
+      "JVM 性能监控工具学习（0/5，完全不会）"
     ]
+  },
+  "integration": {
+    "completedDate": "2026-03-24",
+    "beforeCount": 153,
+    "afterCount": 102,
+    "reduced": 51,
+    "reducedPercentage": "33%",
+    "files": {
+      "jvm": {
+        "before": 60,
+        "after": 35,
+        "reduced": 25
+      },
+      "collection": {
+        "before": 37,
+        "after": 15,
+        "reduced": 22
+      },
+      "javaBase": {
+        "before": 56,
+        "after": 52,
+        "reduced": 4
+      }
+    }
   },
   "activeRules": {
     "scoringStandard": "Strict",
@@ -54,13 +74,15 @@
     "weaknessThreshold": 3.0,
     "syncAfterReview": true,
     "sessionEndSelfCheck": true,
-    "documentLocation": "memory/AI-行为规范.md"
+    "documentLocation": "memory/AI-行为规范.md",
+    "questionIntegration": true
   },
   "userPreferences": {
     "learningMode": "Teach first, then test",
     "feedbackStyle": "Direct, no fluff",
     "communicationStyle": "Professional, concise",
-    "scoringPreference": "Strict (accuracy > encouragement)"
+    "scoringPreference": "Strict (accuracy > encouragement)",
+    "questionStyle": "Comprehensive topics with clear scope"
   },
   "systemFiles": {
     "soul": "SOUL.md",
@@ -70,6 +92,11 @@
     "contextSnapshot": ".context-snapshot.json",
     "reviewTracker": ".review-tracker.json",
     "randomReviewState": ".random-review-state.json",
-    "aiBehaviorRules": "memory/AI-行为规范.md"
+    "aiBehaviorRules": "memory/AI-行为规范.md",
+    "questionBank": {
+      "jvm": "01-Obsidian/40-Questions/JVM 篇 - 整合版.md",
+      "collection": "01-Obsidian/40-Questions/集合框架篇 - 整合版.md",
+      "javaBase": "01-Obsidian/40-Questions/Java 基础篇 - 整合版.md"
+    }
   }
 }

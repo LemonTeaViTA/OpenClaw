@@ -1,129 +1,230 @@
-﻿{
-    "lastSession":  "2026-03-23-weakness-review",
-    "lastUpdate":  "2026-03-23T13:50:00+08:00",
-    "scheduledReviews":  [
-                             {
-                                 "topic":  "JVM Day 1 - Memory Areas",
-                                 "nextReview":  "2026-03-26",
-                                 "reviewCount":  2,
-                                 "lastReview":  "2026-03-22",
-                                 "file":  "memory/dialogs/2026-03-22-session-1.md"
-                             },
-                             {
-                                 "topic":  "JVM Day 2 - GC Basics",
-                                 "nextReview":  "2026-03-25",
-                                 "reviewCount":  2,
-                                 "lastReview":  "2026-03-22",
-                                 "file":  "memory/dialogs/2026-03-22-session-1.md"
-                             },
-                             {
-                                 "topic":  "JVM Day 3 - GC Collectors",
-                                 "nextReview":  "2026-03-23",
-                                 "reviewCount":  1,
-                                 "lastReview":  "2026-03-15",
-                                 "file":  "memory/dialogs/2026-03-15-session-3.md"
-                             },
-                             {
-                                 "reviewCount":  0,
-                                 "lastReview":  "2026-03-15",
-                                 "file":  "memory/dialogs/2026-03-15-session-1.md",
-                                 "nextReview":  "2026-03-30",
-                                 "topic":  "JVM Day 3"
-                             }
-                         ],
-    "randomReview":  {
-                         "lastReview":  "2026-03-23",
-                         "nextReview":  "2026-03-24",
-                         "scope":  "Java (56) + Collections (37) + JVM (66) = 159 questions",
-                         "questionCount":  "10-15"
-                     },
-    "weaknesses":  {
-                       "JVM":  {
-                                   "CAS 原理+ABA":  {
-                                                      "score":  2.5,
-                                                      "lastReview":  null,
-                                                      "nextReview":  "2026-03-23"
-                                                  },
-                                   "线程安全实现":  {
-                                                  "score":  3.5,
-                                                  "lastReview":  null,
-                                                  "nextReview":  "2026-03-24"
-                                              },
-                                   "死锁 4 条件":  {
-                                                   "score":  3,
-                                                   "lastReview":  null,
-                                                   "nextReview":  "2026-03-24"
-                                               }
-                               },
-                       "Collections":  {
-                                           "阻塞队列实现方式":  {
-                                                            "score":  2.5,
-                                                            "lastReview":  "2026-03-23",
-                                                            "nextReview":  "2026-03-25"
-                                                        },
-                                           "HashMap 查找过程":  {
-                                                                "score":  3.5,
-                                                                "lastReview":  "2026-03-23",
-                                                                "nextReview":  "2026-03-25"
-                                                            },
-                                           "哈希冲突解决":  {
-                                                          "score":  3.5,
-                                                          "lastReview":  "2026-03-23",
-                                                          "nextReview":  "2026-03-25"
-                                                      },
-                                           "HashSet vs ArrayList":  {
-                                                                        "score":  3.5,
-                                                                        "lastReview":  null,
-                                                                        "nextReview":  "2026-03-24"
-                                                                    }
-                                       },
-                       "Java Basics":  {
-                                           "反射优缺点":  {
-                                                         "score":  3,
-                                                         "lastReview":  "2026-03-23",
-                                                         "nextReview":  "2026-03-25"
-                                                     },
-                                           "队列 vs 栈实现":  {
-                                                             "score":  3.5,
-                                                             "lastReview":  "2026-03-23",
-                                                             "nextReview":  "2026-03-25"
-                                                         },
-                                           "String 不可变性好处":  {
-                                                                 "score":  3.5,
-                                                                 "lastReview":  null,
-                                                                 "nextReview":  "2026-03-24"
-                                                             },
-                                           "== vs equals":  {
-                                                                "score":  3.5,
-                                                                "lastReview":  null,
-                                                                "nextReview":  "2026-03-24"
-                                                            },
-                                           "final/finally/finalize":  {
-                                                                          "score":  3.5,
-                                                                          "lastReview":  null,
-                                                                          "nextReview":  "2026-03-24"
-                                                                      },
-                                           "String 三兄弟性能":  {
-                                                                "score":  3.5,
-                                                                "lastReview":  null,
-                                                                "nextReview":  "2026-03-24"
-                                                            },
-                                           "throw vs throws":  {
-                                                                   "score":  3,
-                                                                   "lastReview":  null,
-                                                                   "nextReview":  "2026-03-24"
-                                                               }
-                                       }
-                   },
-    "todayCompleted":  {
-                           "date":  "2026-03-23",
-                           "sessions":  [
-                                            {
-                                                "type":  "weakness-review",
-                                                "topic":  "阻塞队列实现方式、哈希冲突解决、ConcurrentHashMap、sleep vs wait、HashMap vs HashTable",
-                                                "score":  "3.5/5",
-                                                "file":  "memory/dialogs/2026-03-23-session-1.md"
-                                            }
-                                        ]
-                       }
+{
+  "version": "2.0",
+  "created": "2026-03-13T10:23:00+08:00",
+  "updated": "2026-03-24T12:35:00+08:00",
+  "integration": {
+    "completedDate": "2026-03-24",
+    "beforeCount": 153,
+    "afterCount": 102,
+    "reduced": 51,
+    "reducedPercentage": "33%"
+  },
+  "strategy": {
+    "reviewMethod": "章节轮转 + 随机抽题（每次 10-15 题）",
+    "reviewCycle": "不按艾宾浩斯，按章节轮转",
+    "sundayRoutine": "薄弱知识点复习 + 模拟面试",
+    "masteryThreshold": {
+      "enabled": false,
+      "note": "记录掌握度但默认不跳过，除非用户明确说"
+    },
+    "bufferDay": "周六（补漏/休息/机动）"
+  },
+  "pending": [
+    {
+      "id": "coll-block-queue-review",
+      "task": "阻塞队列专项复习（2/5，混淆概念）",
+      "assignedDate": "2026-03-24",
+      "priority": "high"
+    },
+    {
+      "id": "jvm-tuning-params",
+      "task": "JVM 调优参数学习（2.6/5，待攻克）",
+      "assignedDate": "2026-03-25",
+      "priority": "high"
+    },
+    {
+      "id": "jvm-monitor-tools",
+      "task": "JVM 性能监控工具学习（0/5，完全不会）",
+      "assignedDate": "2026-03-25",
+      "priority": "high"
+    }
+  ],
+  "completed": [
+    {
+      "id": "jvm-day3-review-20260324",
+      "task": "JVM Day 3 第 3 次复习（7 题）",
+      "assignedDate": "2026-03-24",
+      "completedDate": "2026-03-24",
+      "status": "completed",
+      "finalScore": "4.9/5",
+      "content": {
+        "topics": [
+          "Serial vs ParNew vs Parallel Scavenge",
+          "CMS 收集器详解",
+          "G1 收集器详解",
+          "收集器搭配原则",
+          "GC 日志分析",
+          "收集器选择",
+          "Serial Old vs Parallel Old"
+        ],
+        "questionCount": 7,
+        "originalScore": "4.6/5（03-18）",
+        "reviewScore": "4.9/5"
+      }
+    },
+    {
+      "id": "weakness-review-20260324",
+      "task": "薄弱项专项复习（4 题）",
+      "assignedDate": "2026-03-24",
+      "completedDate": "2026-03-24",
+      "status": "completed",
+      "finalScore": "4.1/5",
+      "content": {
+        "topics": [
+          "Stream 流（1/5 → 3.5/5）",
+          "分代收集算法（1.5/5 → 4/5）",
+          "频繁 Minor GC（2/5 → 3.5/5）",
+          "String 三兄弟性能（3/5 → 4/5）"
+        ],
+        "questionCount": 4,
+        "progress": "全部提升 +2 分以上"
+      }
+    },
+    {
+      "id": "question-bank-integration-20260324",
+      "task": "题库整合（153 题→102 题）",
+      "assignedDate": "2026-03-24",
+      "completedDate": "2026-03-24",
+      "status": "completed",
+      "content": {
+        "jvm": "60 题→35 题（-25）",
+        "collection": "37 题→15 题（-22）",
+        "javaBase": "56 题→52 题（-4）"
+      }
+    }
+  ],
+  "schedule": {
+    "daily": {
+      "2026-03-24": [
+        {
+          "time": "09:00-10:00",
+          "type": "review",
+          "content": "薄弱项专项复习（4 题）",
+          "priority": "high",
+          "status": "✅ 完成 4.1/5"
+        },
+        {
+          "time": "10:00-11:00",
+          "type": "review",
+          "content": "JVM Day 3 第 3 次复习（7 题）",
+          "priority": "high",
+          "status": "✅ 完成 4.9/5"
+        },
+        {
+          "time": "11:00-12:30",
+          "type": "integration",
+          "content": "题库整合（153 题→102 题）",
+          "priority": "high",
+          "status": "✅ 完成"
+        },
+        {
+          "time": "14:00-15:00",
+          "type": "review",
+          "content": "随机复习（10-15 题）",
+          "priority": "medium",
+          "status": "📅 待进行"
+        }
+      ],
+      "2026-03-25": [
+        {
+          "time": "08:30-09:30",
+          "type": "review",
+          "content": "阻塞队列专项复习",
+          "priority": "high"
+        },
+        {
+          "time": "09:30-10:30",
+          "type": "learning",
+          "content": "JVM 调优参数学习",
+          "priority": "high"
+        },
+        {
+          "time": "14:00-15:00",
+          "type": "learning",
+          "content": "JVM 性能监控工具学习",
+          "priority": "high"
+        }
+      ]
+    },
+    "weekly": {
+      "monday": {
+        "morning": "复习：Java 基础篇（随机 10 题）+ 学习：JVM"
+      },
+      "tuesday": {
+        "morning": "复习：集合框架（随机 10 题）+ 学习：JVM"
+      },
+      "wednesday": {
+        "morning": "复习：JVM 篇（随机 10 题）+ 学习：并发"
+      },
+      "thursday": {
+        "morning": "复习：Java 基础篇（随机 10 题）+ 学习：并发"
+      },
+      "friday": {
+        "morning": "复习：集合框架（随机 10 题）+ 学习：MySQL/Redis"
+      },
+      "saturday": {
+        "note": "缓冲日（补漏/休息/机动）"
+      },
+      "sunday": {
+        "afternoon": "薄弱知识点复习（所有🔴薄弱项）+ 模拟面试（20 题）"
+      }
+    },
+    "learning": [
+      {
+        "id": "jvm-tuning-params-20260325",
+        "type": "learning",
+        "content": "JVM 调优参数（8 题）",
+        "scheduledDate": "2026-03-25",
+        "estimatedTime": "60 分钟"
+      },
+      {
+        "id": "jvm-monitor-tools-20260325",
+        "type": "learning",
+        "content": "JVM 性能监控工具（3 题）",
+        "scheduledDate": "2026-03-25",
+        "estimatedTime": "45 分钟"
+      }
+    ]
+  },
+  "masteryThreshold": {
+    "scale": {
+      "weak": {"range": "<3 分", "mark": "🔴", "action": "必须复习（周日重点）"},
+      "improve": {"range": "3-3.5 分", "mark": "🟡", "action": "建议复习"},
+      "proficient": {"range": "≥4 分", "mark": "🟢", "action": "正常复习"},
+      "master": {"range": "5/5 连续 2 次", "mark": "✅", "action": "可跳过（需用户确认）"}
+    },
+    "enabled": false,
+    "note": "默认所有知识点都参与复习，除非用户说'按掌握度阈值跳过'"
+  },
+  "weaknesses": {
+    "jvm": {
+      "tuning-params": {"score": 2.6, "topic": "JVM 调优参数", "nextReview": "2026-03-25"},
+      "monitor-tools": {"score": 0, "topic": "性能监控工具", "nextReview": "2026-03-25"}
+    },
+    "collection": {
+      "block-queue": {"score": 2, "topic": "阻塞队列实现方式", "nextReview": "2026-03-25"}
+    },
+    "javaBase": {
+      "stream-api": {"score": 1, "topic": "Stream 流", "nextReview": "2026-03-25", "progress": "已修复至 3.5/5"},
+      "string-performance": {"score": 3, "topic": "String 三兄弟性能", "nextReview": "2026-03-25", "progress": "已修复至 4/5"}
+    }
+  },
+  "questionBank": {
+    "jvm": {
+      "file": "01-Obsidian/40-Questions/JVM 篇 - 整合版.md",
+      "total": 35,
+      "backup": "01-Obsidian/40-Questions/JVM 篇 - 完整题库.md.bak"
+    },
+    "collection": {
+      "file": "01-Obsidian/40-Questions/集合框架篇 - 整合版.md",
+      "total": 15,
+      "backup": "01-Obsidian/40-Questions/集合框架篇 - 完整题库.md.bak"
+    },
+    "javaBase": {
+      "file": "01-Obsidian/40-Questions/Java 基础篇 - 整合版.md",
+      "total": 52,
+      "backup": "01-Obsidian/40-Questions/Java 基础篇 -56 题.md.bak"
+    }
+  },
+  "notes": "2026-03-24: 题库整合完成 - 153 题→102 题（-33%），同一主题合并，独立考点保留"
 }

@@ -1,50 +1,38 @@
 {
-  "lastReviewDate": "2026-03-23",
-  "todayDate": "2026-03-23",
+  "lastReviewDate": "2026-03-24",
+  "todayDate": "2026-03-24",
+  "integrationUpdate": {
+    "date": "2026-03-24",
+    "beforeCount": 159,
+    "afterCount": 102,
+    "mapping": {
+      "jvm": "60 题→35 题",
+      "collection": "37 题→15 题",
+      "javaBase": "56 题→52 题"
+    }
+  },
   "todayQuestionIds": [
-    "jvm-017",
-    "jvm-018",
-    "jvm-019",
-    "jvm-020",
-    "jvm-021",
-    "jvm-022",
-    "jvm-023",
-    "jvm-016",
-    "jvm-038",
-    "jvm-039",
-    "jvm-040",
-    "jvm-041",
-    "jvm-042",
-    "jvm-043",
-    "jvm-044",
-    "jvm-037",
+    "coll-006",
     "java-052",
     "java-021",
     "coll-019",
-    "coll-002"
+    "coll-002",
+    "jvm-008",
+    "jvm-009",
+    "jvm-010",
+    "coll-004",
+    "coll-005",
+    "java-003",
+    "java-004"
   ],
   "excludeIds": [
-    "coll-025",
-    "java-054",
-    "java-055",
+    "jvm-001",
+    "jvm-002",
     "jvm-003",
-    "jvm-010",
-    "jvm-016",
-    "jvm-017",
-    "jvm-018",
-    "jvm-019",
-    "jvm-020",
-    "jvm-021",
-    "jvm-022",
-    "jvm-023",
-    "jvm-037",
-    "jvm-038",
-    "jvm-039",
-    "jvm-040",
-    "jvm-041",
-    "jvm-042",
-    "jvm-043",
-    "jvm-044",
+    "jvm-004",
+    "jvm-005",
+    "jvm-006",
+    "jvm-007",
     "java-052",
     "java-021",
     "coll-019",
@@ -52,31 +40,19 @@
   ],
   "completedRounds": 4,
   "round1Progress": {
-    "total": 159,
-    "completed": 25,
-    "remaining": 134,
+    "total": 102,
+    "completed": 24,
+    "remaining": 78,
     "completedIds": [
-      "coll-025",
-      "java-054",
-      "java-055",
+      "jvm-001",
+      "jvm-002",
       "jvm-003",
-      "jvm-010",
-      "jvm-016",
-      "jvm-017",
-      "jvm-018",
-      "jvm-019",
-      "jvm-020",
-      "jvm-021",
-      "jvm-022",
-      "jvm-023",
-      "jvm-037",
-      "jvm-038",
-      "jvm-039",
-      "jvm-040",
-      "jvm-041",
-      "jvm-042",
-      "jvm-043",
-      "jvm-044",
+      "jvm-004",
+      "jvm-005",
+      "jvm-006",
+      "jvm-007",
+      "coll-001",
+      "coll-006",
       "java-052",
       "java-021",
       "coll-019",
@@ -85,77 +61,69 @@
   },
   "weaknesses": [
     {
-      "id": "coll-025",
-      "score": 2.5,
-      "topic": "ConcurrentHashMap",
-      "lastScore": 4.0,
-      "progress": "已修复"
-    },
-    {
-      "id": "java-054",
-      "score": 2.5,
-      "topic": "sleep vs wait",
-      "lastScore": 4.0,
-      "progress": "已修复"
-    },
-    {
-      "id": "java-055",
-      "score": 2.5,
-      "topic": "HashMap vs HashTable",
+      "id": "coll-002",
+      "score": 3.5,
+      "topic": "List/Set/Map对比",
       "lastScore": 3.5,
       "progress": "待加强"
     },
     {
-      "id": "java-066",
-      "score": 1,
-      "topic": "Stream 流",
-      "lastScore": 1,
-      "progress": "待学习"
-    },
-    {
-      "id": "jvm-032",
-      "score": 1.5,
-      "topic": "分代收集算法",
-      "lastScore": 1.5,
-      "progress": "待学习"
-    },
-    {
-      "id": "jvm-047",
+      "id": "coll-003",
       "score": 2,
-      "topic": "频繁 Minor GC",
+      "topic": "阻塞队列实现方式",
       "lastScore": 2,
-      "progress": "待加强"
+      "progress": "薄弱"
     },
     {
-      "id": "java-037",
-      "score": 3,
-      "topic": "String 三兄弟性能",
-      "lastScore": 3,
-      "progress": "待纠正"
+      "id": "jvm-008",
+      "score": 2.6,
+      "topic": "JVM 调优参数",
+      "lastScore": 2.6,
+      "progress": "待学习"
+    },
+    {
+      "id": "jvm-009",
+      "score": 0,
+      "topic": "性能监控工具",
+      "lastScore": 0,
+      "progress": "完全不会"
     }
   ],
   "todaySummary": {
-    "date": "2026-03-23",
-    "questionCount": 5,
-    "score": "2.3/5",
+    "date": "2026-03-24",
+    "questionCount": 12,
+    "score": "待计算",
     "scoringStandard": "Strict",
     "completedIds": [
-      "coll-024",
-      "jvm-047",
-      "jvm-032",
-      "java-037",
-      "java-066"
+      "jvm-001",
+      "jvm-002",
+      "jvm-003",
+      "jvm-004",
+      "jvm-005",
+      "jvm-006",
+      "jvm-007",
+      "coll-001",
+      "coll-006"
     ],
     "pendingIds": [
-      "coll-006",
-      "java-061"
+      "java-052",
+      "java-021",
+      "coll-019",
+      "coll-002"
+    ],
+    "carryOverFrom20260323": [
+      "java-052 (4/5)",
+      "java-021 (3.5/5)",
+      "coll-019 (4/5)",
+      "coll-002 (3.5/5)"
     ]
   },
-  "nextReviewDate": "2026-03-24",
+  "nextReviewDate": "2026-03-25",
   "rules": {
     "excludeToday": true,
     "excludeRound1Completed": false,
     "prioritizeWeaknesses": true,
-    "questionCount": "10-15"
+    "questionCount": "10-15",
+    "carryOverIncomplete": true
   }
 }
