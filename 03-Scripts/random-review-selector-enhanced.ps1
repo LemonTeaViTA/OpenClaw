@@ -22,7 +22,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$workspaceRoot = Split-Path $PSScriptRoot -Parent
+$workspaceRoot = Split-Path $PSScriptRoot -Parent | Split-Path -Parent  # Go up from 03-Scripts to workspace
 $stateFile = Join-Path $workspaceRoot ".random-review-state.json"
 $questionMapFile = Join-Path $workspaceRoot ".question-id-map.json"
 $reviewTrackerFile = Join-Path $workspaceRoot ".review-tracker.json"

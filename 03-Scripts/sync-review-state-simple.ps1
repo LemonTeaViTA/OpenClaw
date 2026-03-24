@@ -2,10 +2,10 @@
 # 简化版同步脚本（用于测试）
 
 $ErrorActionPreference = "Stop"
-$workspaceRoot = "C:\Users\11237\.openclaw-autoclaw\workspace"
+$workspaceRoot = "C:\Users\11237\.openclaw-autoclaw\workspace\00-Core"
 $stateFile = Join-Path $workspaceRoot ".random-review-state.json"
 $contextSnapshotFile = Join-Path $workspaceRoot ".context-snapshot.json"
-$memoryRoot = Join-Path $workspaceRoot "memory"
+$memoryRoot = Join-Path $workspaceRoot "..\02-Memory"
 
 Write-Host "Syncing review state (simple version)..." -ForegroundColor Cyan
 
