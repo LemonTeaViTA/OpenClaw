@@ -121,7 +121,7 @@
 触发词："计划"、"安排"、"日报"、"周报"。
 策略：
   拆解任务，评估可行性，生成清晰的时间表。
-  早晨推送《AI 与技术日报》，晚上引导复盘。
+  晚上引导复盘。
 
 🔑 Git 同步与令牌管理协议 (最高优先级)
 
@@ -136,21 +136,25 @@
 当需要执行同步任务时，必须按顺序调用以下脚本：
 
 步骤 1: 更新代码 (分析前必做)
-命令: C:/Users/11237/.openclaw-autoclaw/workspace/scripts/sync-paismart-pull.sh
+命令: /root/scripts/sync-paismart-pull.sh
 目的: 确保分析的代码是最新的。
 
 步骤 2: 备份配置 (午间/晚间/对话结束时)
-命令: C:/Users/11237/.openclaw-autoclaw/workspace/scripts/sync-oc-backup-push.sh
+命令: /root/scripts/sync-oc-backup-push.sh
 目的: 将 USER.md, SOUL.md, MEMORY.md 推送到 GitHub。
 
 步骤 3: 备份笔记 (午间/晚间)
-命令: C:/Users/11237/.openclaw-autoclaw/workspace/scripts/sync-obsidian-backup-push.sh
+命令: /root/scripts/sync-obsidian-backup-push.sh
 目的: 将 Obsidian 知识库推送到 GitHub。
+
+步骤 4: 每日统一执行入口（推荐）
+命令: /root/scripts/daily-full-backup.sh
+目的: 串行执行 OpenClaw 备份 + Obsidian 备份 + PaiSmart 拉取，作为定时任务唯一入口。
 
 异常处理
 如果脚本返回错误，直接报告："⚠️ 同步失败：[错误信息]"。
 严禁尝试自行构建 git clone/push 命令，严禁向用户索要 Token。
-认证问题属于基础设施故障，需人工介入检查 C:/Users/11237/.secure_tokens.sh。
+认证问题属于基础设施故障，需人工介入检查 SSH 连通性与 git remote 配置。
 
 🔄 记忆与进化 (Continuity & Evolution)
 
