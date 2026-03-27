@@ -26,6 +26,6 @@ git commit -m "🔄 AutoBackup $timestamp"
 
 # 推送到 GitHub
 echo "📤 推送到 GitHub..."
-git push origin master
+git push origin main
 
 echo "✅ 备份完成：$timestamp"
