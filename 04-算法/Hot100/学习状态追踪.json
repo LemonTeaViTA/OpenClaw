@@ -1,0 +1,82 @@
+{
+  "plan": "LeetCode Hot100 - 30 天刷题计划",
+  "startDate": "2026-03-30",
+  "currentDay": 3,
+  "lastStudyDate": "2026-04-01",
+  "totalProgress": {
+    "completed": 3,
+    "total": 100,
+    "percentage": 3
+  },
+  "days": {
+    "Day1": {
+      "topics": ["两数之和", "盛最多水的容器"],
+      "status": "completed",
+      "completedDate": "2026-03-30",
+      "mastered": true,
+      "reviewDates": ["2026-04-06", "2026-04-13", "2026-04-30"]
+    },
+    "Day2": {
+      "topics": ["三数之和"],
+      "status": "completed",
+      "completedDate": "2026-04-01",
+      "mastered": true,
+      "reviewDates": ["2026-04-02", "2026-04-04", "2026-04-08", "2026-04-15"]
+    },
+    "Day3": {
+      "topics": ["接雨水"],
+      "status": "pending",
+      "startedDate": null,
+      "completedDate": null,
+      "mastered": false,
+      "reviewDates": []
+    },
+    "Day4": {
+      "topics": ["无重复字符的最长子串"],
+      "status": "pending",
+      "startedDate": null,
+      "completedDate": null,
+      "mastered": false,
+      "reviewDates": []
+    },
+    "Day5": {
+      "topics": ["最长回文子串"],
+      "status": "pending",
+      "startedDate": null,
+      "completedDate": null,
+      "mastered": false,
+      "reviewDates": []
+    },
+    "Day6": {
+      "topics": ["反转链表", "合并两个有序链表"],
+      "status": "pending",
+      "startedDate": null,
+      "completedDate": null,
+      "mastered": false,
+      "reviewDates": []
+    },
+    "Day7": {
+      "topics": ["第一周复习"],
+      "status": "pending",
+      "startedDate": null,
+      "completedDate": null,
+      "mastered": false,
+      "reviewDates": []
+    }
+  },
+  "nextAction": {
+    "type": "continue",
+    "day": "Day3",
+    "topic": "接雨水",
+    "description": "开始学习 Day3 的接雨水题目（困难难度）",
+    "alternative": "如果三数之和还没掌握，告诉我，先复习"
+  },
+  "reviewQueue": [],
+  "weakTopics": [],
+  "settings": {
+    "autoReview": true,
+    "reviewInterval": [1, 3, 7, 14],
+    "dailyReminder": false,
+    "confirmBeforeNext": true
+  }
+}
