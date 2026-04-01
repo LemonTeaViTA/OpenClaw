@@ -1,8 +1,11 @@
 {
   "plan": "LeetCode Hot100 - 30 天刷题计划",
+  "version": "2.0",
+  "idSystem": "leetcode-problem-id",
   "startDate": "2026-03-30",
-  "currentDay": 3,
+  "currentDay": 2,
   "lastStudyDate": "2026-04-01",
+  "lastUpdateTime": "2026-04-01T21:50+08:00",
   "totalProgress": {
     "completed": 3,
     "total": 100,
@@ -10,73 +13,128 @@
   },
   "days": {
     "Day1": {
-      "topics": ["两数之和", "盛最多水的容器"],
+      "problemIds": ["lc-1", "lc-11"],
       "status": "completed",
       "completedDate": "2026-03-30",
       "mastered": true,
-      "reviewDates": ["2026-04-06", "2026-04-13", "2026-04-30"]
+      "reviewDates": ["2026-04-06", "2026-04-13", "2026-04-30"],
+      "reviewStatus": {
+        "lc-1": {"lastReview": null, "nextReview": "2026-04-06", "reviewCount": 0},
+        "lc-11": {"lastReview": null, "nextReview": "2026-04-06", "reviewCount": 0}
+      }
     },
     "Day2": {
-      "topics": ["三数之和"],
+      "problemIds": ["lc-15"],
       "status": "completed",
       "completedDate": "2026-04-01",
       "mastered": true,
-      "reviewDates": ["2026-04-02", "2026-04-04", "2026-04-08", "2026-04-15"]
+      "reviewDates": ["2026-04-02", "2026-04-04", "2026-04-08", "2026-04-15"],
+      "reviewStatus": {
+        "lc-15": {"lastReview": null, "nextReview": "2026-04-02", "reviewCount": 0}
+      }
     },
     "Day3": {
-      "topics": ["接雨水"],
+      "problemIds": ["lc-42"],
       "status": "pending",
       "startedDate": null,
       "completedDate": null,
       "mastered": false,
-      "reviewDates": []
+      "reviewDates": [],
+      "reviewStatus": {}
     },
     "Day4": {
-      "topics": ["无重复字符的最长子串"],
+      "problemIds": ["lc-3"],
       "status": "pending",
       "startedDate": null,
       "completedDate": null,
       "mastered": false,
-      "reviewDates": []
+      "reviewDates": [],
+      "reviewStatus": {}
     },
     "Day5": {
-      "topics": ["最长回文子串"],
+      "problemIds": ["lc-5"],
       "status": "pending",
       "startedDate": null,
       "completedDate": null,
       "mastered": false,
-      "reviewDates": []
+      "reviewDates": [],
+      "reviewStatus": {}
     },
     "Day6": {
-      "topics": ["反转链表", "合并两个有序链表"],
+      "problemIds": ["lc-206", "lc-21"],
       "status": "pending",
       "startedDate": null,
       "completedDate": null,
       "mastered": false,
-      "reviewDates": []
+      "reviewDates": [],
+      "reviewStatus": {}
     },
     "Day7": {
-      "topics": ["第一周复习"],
+      "problemIds": ["review-week1"],
       "status": "pending",
       "startedDate": null,
       "completedDate": null,
       "mastered": false,
-      "reviewDates": []
+      "reviewDates": [],
+      "reviewStatus": {}
     }
   },
   "nextAction": {
     "type": "continue",
     "day": "Day3",
-    "topic": "接雨水",
-    "description": "开始学习 Day3 的接雨水题目（困难难度）",
-    "alternative": "如果三数之和还没掌握，告诉我，先复习"
+    "problemIds": ["lc-42"],
+    "description": "开始学习 Day3 - 接雨水（lc-42，困难难度）",
+    "alternative": "如果 Day2 的 lc-15（三数之和）还没掌握，告诉我，先复习"
   },
   "reviewQueue": [],
-  "weakTopics": [],
+  "weakProblems": [],
+  "problemMetadata": {
+    "lc-1": {
+      "title": "两数之和",
+      "difficulty": "easy",
+      "category": "数组/哈希表"
+    },
+    "lc-11": {
+      "title": "盛最多水的容器",
+      "difficulty": "medium",
+      "category": "数组/双指针"
+    },
+    "lc-15": {
+      "title": "三数之和",
+      "difficulty": "medium",
+      "category": "数组/双指针"
+    },
+    "lc-42": {
+      "title": "接雨水",
+      "difficulty": "hard",
+      "category": "数组/双指针/单调栈"
+    },
+    "lc-3": {
+      "title": "无重复字符的最长子串",
+      "difficulty": "medium",
+      "category": "字符串/滑动窗口"
+    },
+    "lc-5": {
+      "title": "最长回文子串",
+      "difficulty": "medium",
+      "category": "字符串/动态规划"
+    },
+    "lc-206": {
+      "title": "反转链表",
+      "difficulty": "easy",
+      "category": "链表"
+    },
+    "lc-21": {
+      "title": "合并两个有序链表",
+      "difficulty": "easy",
+      "category": "链表"
+    }
+  },
   "settings": {
     "autoReview": true,
     "reviewInterval": [1, 3, 7, 14],
     "dailyReminder": false,
-    "confirmBeforeNext": true
+    "confirmBeforeNext": true,
+    "idSystem": "leetcode-problem-id"
   }
 }
