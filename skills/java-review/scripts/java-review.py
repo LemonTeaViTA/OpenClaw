@@ -235,7 +235,7 @@ def main():
     parser = argparse.ArgumentParser(description="Java 八股文复习")
     parser.add_argument("--mode", choices=["daily", "section", "weak", "random"], 
                        default="daily", help="复习模式")
-    parser.add_argument("--count", type=int, default=10, help="复习题目数量")
+    parser.add_argument("--count", type=int, default=10, help="复习题目数量（默认 10 题）")
     parser.add_argument("--section", type=str, help="指定篇章（逗号分隔）")
     parser.add_argument("--output", choices=["console", "json"], 
                        default="console", help="输出模式")
